@@ -37,7 +37,7 @@ onUnmounted(() => {
 </script>
 <template>
   <!-- Top Menu -->
-  <ul class="top-menu hidden bg-black lg:flex justify-center items-center py-2 transition-opacity duration-300">
+  <ul class="top-menu hidden bg-black lg:flex justify-center items-center py-2">
         <li class="mx-2 hover:text-red-600 text-gray-300">
           <a href="#" class="text-sm mr-2">Bestsellers</a>
         </li>
@@ -55,7 +55,7 @@ onUnmounted(() => {
     </div>
      <!-- Center Menu -->
     <div class="hidden lg:inline">
-      <ul class="bottom-menu overflow-hidden backdrop-blur flex items-center rounded-full relative transition-colors duration-300">
+      <ul class="bottom-menu overflow-hidden backdrop-blur flex items-center rounded-full relative">
         <li
           class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100">
           <a href="#" class="flex items-center">
