@@ -7,32 +7,25 @@ import {
   MagnifyingGlassIcon,
   ArrowLeftIcon,
 } from "@heroicons/vue/24/solid";
-
-// State to handle the visibility of the search field
 const showSearch = ref(false);
 const showMobileSearch = ref(false);
-// State to track if the navbar should have a blur-grey background
-const isScrolled = ref(false);
-// State to track the visibility of the top-menu
-const showTopMenu = ref(true);
-// Function to toggle the search field
 const toggleSearch = () => {
   showSearch.value = !showSearch.value;
 };
 const toggleMobileSearch = () => {
   showMobileSearch.value = !showMobileSearch.value;
 };
-// Function to hide the search field
 const hideSearch = () => {
   showSearch.value = false;
 };
 const hideMobileSearch = () => {
   showMobileSearch.value = false;
 };
+const isScrolled = ref(false);
 // Function to handle scroll event
 const handleScroll = () => {
   // Check if the page is scrolled down by a certain amount
-  isScrolled.value = window.scrollY > 5; // Adjust the scroll value as needed
+  isScrolled.value = window.scrollY > 5;
 };
 // Add and remove scroll event listener when the component is mounted/unmounted
 onMounted(() => {
@@ -42,13 +35,9 @@ onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
 </script>
-
 <template>
   <!-- Top Menu -->
-  <ul
-        v-show="showTopMenu"
-        class="top-menu hidden bg-black lg:flex justify-center items-center py-2 transition-opacity duration-300"
-      >
+  <ul class="top-menu hidden bg-black lg:flex justify-center items-center py-2 transition-opacity duration-300">
         <li class="mx-2 hover:text-red-600 text-gray-300">
           <a href="#" class="text-sm mr-2">Bestsellers</a>
         </li>
@@ -64,6 +53,7 @@ onUnmounted(() => {
     <div class="menu-left">
       <img src="../assets/images/LOGO.png" alt="logo" class="w-10" />
     </div>
+     <!-- Center Menu -->
     <div class="hidden lg:inline">
       <ul class="bottom-menu overflow-hidden backdrop-blur flex items-center rounded-full relative transition-colors duration-300">
         <li
@@ -127,8 +117,7 @@ onUnmounted(() => {
           leave-active-class="transition ease-in duration-100"
           leave-from-class="transform opacity-100 translate-y-0 scale-y-100"
           leave-to-class="transform opacity-0 -translate-y-full scale-y-95">
-        <div
-              v-if="showMobileSearch"
+        <div v-if="showMobileSearch"
               class="w-full absolute inset-0 text-white flex justify-between items-center">
               <input
                 type="search"
@@ -139,7 +128,7 @@ onUnmounted(() => {
                 @click="hideMobileSearch">
                 <ArrowLeftIcon />
               </button>
-            </div>
+          </div>
     </transition>
       <button type="button" class="mx-1">
         <ShoppingCartIcon class="size-6 hover:text-red-600 text-gray-300" />
