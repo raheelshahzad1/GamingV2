@@ -5,87 +5,49 @@ import {
   UserCircleIcon,
   ComputerDesktopIcon,
   MagnifyingGlassIcon,
-  XMarkIcon, // Import the close (X) icon
+  ArrowLeftIcon,
 } from "@heroicons/vue/24/solid";
 
 // State to handle the visibility of the search field
 const showSearch = ref(false);
-
+const showMobileSearch = ref(false);
 // State to track if the navbar should have a blur-grey background
 const isScrolled = ref(false);
-
 // State to track the visibility of the top-menu
 const showTopMenu = ref(true);
-
 // Function to toggle the search field
 const toggleSearch = () => {
   showSearch.value = !showSearch.value;
 };
-
+const toggleMobileSearch = () => {
+  showMobileSearch.value = !showMobileSearch.value;
+};
 // Function to hide the search field
 const hideSearch = () => {
   showSearch.value = false;
 };
-
+const hideMobileSearch = () => {
+  showMobileSearch.value = false;
+};
 // Function to handle scroll event
 const handleScroll = () => {
   // Check if the page is scrolled down by a certain amount
   isScrolled.value = window.scrollY > 5; // Adjust the scroll value as needed
-
-  // Hide the top menu when scrolling
-  showTopMenu.value = !isScrolled.value;
 };
-
 // Add and remove scroll event listener when the component is mounted/unmounted
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
-
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
 </script>
 
 <template>
-  <header
-    :class="[
-      'text-white flex justify-between bg-black lg:bg-transparent items-center py-2 px-3 md:px-5 sticky top-0 transition-colors duration-300',
-      isScrolled ? 'lg:bg-gray-950/90 backdrop-blur' : '',
-    ]"
-  >
-    <!-- Left Menu -->
-    <div class="menu-left">
-      <img src="../assets/images/LOGO.png" alt="logo" class="w-10" />
-    </div>
-
-    <!-- Mobile Heder -->
-    <div class="block lg:hidden relative grow">
-      <div>
-        <input
-          type="search"
-          placeholder="Search..."
-          class="bg-transparent outline-none placeholder-white text-white w-full"
-        />
-        <!-- <XMarkIcon
-          class="size-5 cursor-pointer absolute -right-6 hover:text-red-600"
-          @click="hideSearch"
-        /> -->
-      </div>
-      <!-- <div
-        class="search mx-2 py-2 px-3 bg-red-600 rounded-full hover:text-white text-gray-300 cursor-pointer"
-        @click="toggleSearch"
-      >
-        <a class="flex items-center">
-          <MagnifyingGlassIcon class="size-5" />
-        </a>
-      </div> -->
-    </div>
-     <!-- Mobile Heder -->
-    <div class="hidden lg:inline">
-      <!-- Top Menu (conditionally rendered) -->
-      <ul
+  <!-- Top Menu -->
+  <ul
         v-show="showTopMenu"
-        class="top-menu hidden lg:flex justify-center items-center h-10 transition-opacity duration-300 mb-1"
+        class="top-menu hidden bg-black lg:flex justify-center items-center py-2 transition-opacity duration-300"
       >
         <li class="mx-2 hover:text-red-600 text-gray-300">
           <a href="#" class="text-sm mr-2">Bestsellers</a>
@@ -96,83 +58,99 @@ onUnmounted(() => {
         <li class="mx-2 hover:text-red-600 text-gray-300">
           <a href="#" class="text-sm">Save With "GAMING0E70"</a>
         </li>
-      </ul>
-
-      <!-- Bottom Menu -->
-      <ul
-        :class="[
-          'bottom-menu backdrop-blur flex items-center bg-gray-400 rounded-full p-2 relative transition-colors duration-300',
-          isScrolled ? 'bg-transparent' : '',
-        ]"
-      >
-        <!-- Search field -->
-        <div
-          v-if="showSearch"
-          class="absolute left-0 top-0 bg-red-600 text-white p-5 flex justify-between rounded-full items-center w-full"
-        >
-          <input
-            type="search"
-            placeholder="Search..."
-            class="bg-transparent outline-none placeholder-white text-white w-full"
-          />
-          <XMarkIcon
-            class="size-5 cursor-pointer absolute -right-8 hover:text-red-600"
-            @click="hideSearch"
-          />
-        </div>
+  </ul>
+  <header class="relative text-white flex justify-between bg-black lg:bg-gray-400 items-center py-2 px-3 md:px-5 transition-colors duration-300">
+    <!-- Left Menu -->
+    <div class="menu-left">
+      <img src="../assets/images/LOGO.png" alt="logo" class="w-10" />
+    </div>
+    <div class="hidden lg:inline">
+      <ul class="bottom-menu overflow-hidden backdrop-blur flex items-center rounded-full relative transition-colors duration-300">
         <li
-          class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100"
-        >
+          class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100">
           <a href="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />PC
           </a>
         </li>
-        <li
-          class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100"
-        >
+        <li class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100">
           <a href="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />PlayStation
           </a>
         </li>
-        <li
-          class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100"
-        >
+        <li class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100">
           <a href="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />Xbox
           </a>
         </li>
-        <li
-          class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100"
-        >
+        <li class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100">
           <a href="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />Nintendo
           </a>
         </li>
-        <li
-          class="search mx-2 p-3 bg-red-600 rounded-full hover:text-white text-gray-300 cursor-pointer"
-          @click="toggleSearch"
-        >
-          <a class="flex items-center">
+        <li class="search mx-2 p-3 bg-red-600 rounded-full hover:text-white text-gray-300 cursor-pointer">
+          <button class="flex items-center" @click="toggleSearch">
             <MagnifyingGlassIcon class="size-5" />
-          </a>
+          </button>
+          <transition
+            enter-active-class="transition ease-out duration-200"
+            enter-from-class="transform opacity-0 translate-x-full scale-x-100"
+            enter-to-class="transform opacity-100 translate-x-0 scale-x-100"
+            leave-active-class="transition ease-in duration-100"
+            leave-from-class="transform opacity-100 translate-x-0 scale-x-100"
+            leave-to-class="transform opacity-0 translate-x-full scale-x-95">
+            <div
+              v-if="showSearch"
+              class="absolute left-0 bottom-0 top-0 text-white flex justify-between items-center w-full">
+              <input
+                type="search"
+                placeholder="Search..."
+                class="bg-red-600 py-4 pl-10 pr-3 outline-none rounded-full placeholder-white text-white w-full"/>
+              <button
+                class="size-5 cursor-pointer absolute left-3"
+                @click="hideSearch">
+                <ArrowLeftIcon />
+              </button>
+            </div>
+          </transition>
         </li>
       </ul>
     </div>
-
     <!-- Right Menu -->
     <div id="menu-right" class="flex">
-      <a href="#" class="mx-1">
-        <ShoppingCartIcon class="size-7 hover:text-red-600 text-gray-300" />
-      </a>
-      <a href="#" class="mx-1">
-        <UserCircleIcon class="size-7 hover:text-red-600 text-gray-300" />
-      </a>
+      <button type="button" class="mx-1 lg:hidden inline" @click="toggleMobileSearch">
+        <MagnifyingGlassIcon class="size-6 hover:text-red-600 text-gray-300" />
+      </button>
+      <transition
+          enter-active-class="transition ease-out duration-200"
+          enter-from-class="transform opacity-0 -translate-y-full scale-y-100"
+          enter-to-class="transform opacity-100 translate-y-0 scale-y-100"
+          leave-active-class="transition ease-in duration-100"
+          leave-from-class="transform opacity-100 translate-y-0 scale-y-100"
+          leave-to-class="transform opacity-0 -translate-y-full scale-y-95">
+        <div
+              v-if="showMobileSearch"
+              class="w-full absolute inset-0 text-white flex justify-between items-center">
+              <input
+                type="search"
+                placeholder="Search..."
+                class="bg-red-600 py-4 pl-10 pr-3 outline-none placeholder-white text-white w-full"/>
+              <button
+                class="size-5 cursor-pointer absolute left-3"
+                @click="hideMobileSearch">
+                <ArrowLeftIcon />
+              </button>
+            </div>
+    </transition>
+      <button type="button" class="mx-1">
+        <ShoppingCartIcon class="size-6 hover:text-red-600 text-gray-300" />
+      </button>
+      <button type="button" class="mx-1">
+        <UserCircleIcon class="size-6 hover:text-red-600 text-gray-300" />
+      </button>
     </div>
   </header>
   <!-- Mobile Heder -->
-  <ul
-    class="lg:hidden sticky top-14 bg-gray-700/60 backdrop-blur flex items-center justify-center gap-10 py-2"
-  >
+  <ul class="lg:hidden inset-x-0 z-50 bg-gray-700/60 backdrop-blur flex items-center justify-evenly py-2">
     <li class="hover:text-white text-gray-200">
       <a href="#" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />PC
@@ -194,11 +172,8 @@ onUnmounted(() => {
       </a>
     </li>
   </ul>
-  <!-- Mobile Heder -->
 </template>
-
 <style scoped>
-/* Style the clear (x) button */
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   height: 18px;
