@@ -11,10 +11,10 @@ import { ChevronRightIcon } from "@heroicons/vue/24/solid";
       </h1>
       <ChevronRightIcon class="size-4 mt-[5px] text-gray-600" />
     </div>
-    <div class="relative h-[250px] sm:h-[440px] mb-8 md:mb-12">
+    <div class="relative h-[250px] sm:h-[440px] mb-6">
     <img src="https://gaming-cdn.com/img/products/9093/hcover/1400x500/9093.jpg?v=1715876608" alt=""
       class="w-full h-full object-cover rounded-lg" />
-    <div class="absolute inset-0  bg-[#535C91] opacity-40 rounded-lg"></div>
+    <div class="absolute inset-0  bg-black opacity-40 rounded-lg"></div>
     <div class="max-w-7xl mx-auto absolute top-1/2 -translate-y-1/2 px-4 inset-x-0 z-10">
       <div>
         <h1 class="text-white font-bold text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4">
