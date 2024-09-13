@@ -1,4 +1,4 @@
-/* src/assets/tailwind.css */
+/* Add this to your global CSS file */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

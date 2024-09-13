@@ -1,12 +1,16 @@
+<script setup>
+</script>
+
 <template>
-  <div class="relative h-[300px] sm:h-[440px]">
+  <div class="relative h-[250px] sm:h-[440px] mb-8 md:mb-20">
     <img
       src="https://gaming-cdn.com/img/products/10140/hcover/1400x500/10140.jpg?v=1725274116"
       alt=""
       class="w-full h-full object-cover"
     />
+    <div class="absolute inset-0  bg-black opacity-50"></div>
     <div
-      class="absolute top-1/2 -translate-y-1/2 w-full sm:w-1/2 px-3 sm:px-6 md:px-8 lg:px-10 z-10"
+      class="absolute top-1/2 -translate-y-1/2 w-full sm:w-1/2 px-5 md:px-7 lg:px-10 z-10"
     >
       <div>
         <h1

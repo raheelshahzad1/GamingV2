@@ -37,18 +37,18 @@ onUnmounted(() => {
 </script>
 <template>
   <!-- Top Menu -->
-  <ul class="top-menu hidden bg-black lg:flex justify-center items-center py-2">
-        <li class="mx-2 hover:text-red-600 text-gray-300">
+  <ul class="top-menu hidden bg-[#050c25] lg:flex justify-center items-center py-2">
+        <li class="mx-2 hover:text-[#9290C3] text-gray-200">
           <a href="#" class="text-sm mr-2">Bestsellers</a>
         </li>
-        <li class="mx-2 hover:text-red-600 text-gray-300">
+        <li class="mx-2 hover:text-[#9290C3] text-gray-200">
           <a href="#" class="text-sm mr-2">New Games</a>
         </li>
-        <li class="mx-2 hover:text-red-600 text-gray-300">
+        <li class="mx-2 hover:text-[#9290C3] text-gray-200">
           <a href="#" class="text-sm">Save With "GAMING0E70"</a>
         </li>
   </ul>
-  <header class="relative text-white flex justify-between bg-black lg:bg-gray-400 items-center py-2 px-3 md:px-5 transition-colors duration-300">
+  <header class="relative text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center py-2 px-3 md:px-5 transition-colors duration-300">
     <!-- Left Menu -->
     <div class="menu-left">
       <img src="../assets/images/LOGO.png" alt="logo" class="w-10" />
@@ -57,28 +57,28 @@ onUnmounted(() => {
     <div class="hidden lg:inline">
       <ul class="bottom-menu overflow-hidden backdrop-blur flex items-center rounded-full relative">
         <li
-          class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100">
+          class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
           <a href="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />PC
           </a>
         </li>
-        <li class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100">
+        <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
           <a href="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />PlayStation
           </a>
         </li>
-        <li class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100">
+        <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
           <a href="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />Xbox
           </a>
         </li>
-        <li class="hover:bg-gray-100/40 bg-transparent rounded-full mx-2 p-3 text-gray-100">
+        <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
           <a href="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />Nintendo
           </a>
         </li>
-        <li class="search mx-2 p-3 bg-red-600 rounded-full hover:text-white text-gray-300 cursor-pointer">
-          <button class="flex items-center" @click="toggleSearch">
+        <li>
+          <button class="flex items-center search mx-2 p-3 bg-[#070F2B] rounded-full hover:text-white text-gray-300 cursor-pointer" @click="toggleSearch">
             <MagnifyingGlassIcon class="size-5" />
           </button>
           <transition
@@ -94,7 +94,7 @@ onUnmounted(() => {
               <input
                 type="search"
                 placeholder="Search..."
-                class="bg-red-600 py-4 pl-10 pr-3 outline-none rounded-full placeholder-white text-white w-full"/>
+                class="bg-[#070F2B] py-4 pl-10 pr-3 outline-none rounded-full placeholder-white text-white w-full"/>
               <button
                 class="size-5 cursor-pointer absolute left-3"
                 @click="hideSearch">
@@ -108,7 +108,7 @@ onUnmounted(() => {
     <!-- Right Menu -->
     <div id="menu-right" class="flex">
       <button type="button" class="mx-1 lg:hidden inline" @click="toggleMobileSearch">
-        <MagnifyingGlassIcon class="size-6 hover:text-red-600 text-gray-300" />
+        <MagnifyingGlassIcon class="size-6 hover:text-[#070F2B] text-gray-300" />
       </button>
       <transition
           enter-active-class="transition ease-out duration-200"
@@ -122,7 +122,7 @@ onUnmounted(() => {
               <input
                 type="search"
                 placeholder="Search..."
-                class="bg-red-600 py-4 pl-10 pr-3 outline-none placeholder-white text-white w-full"/>
+                class="bg-[#070F2B] py-4 pl-10 pr-3 outline-none placeholder-white text-white w-full"/>
               <button
                 class="size-5 cursor-pointer absolute left-3"
                 @click="hideMobileSearch">
@@ -131,15 +131,15 @@ onUnmounted(() => {
           </div>
     </transition>
       <button type="button" class="mx-1">
-        <ShoppingCartIcon class="size-6 hover:text-red-600 text-gray-300" />
+        <ShoppingCartIcon class="size-6 md:size-7 hover:text-[#070F2B] text-gray-300" />
       </button>
       <button type="button" class="mx-1">
-        <UserCircleIcon class="size-6 hover:text-red-600 text-gray-300" />
+        <UserCircleIcon class="size-6 md:size-7 hover:text-[#070F2B] text-gray-300" />
       </button>
     </div>
   </header>
   <!-- Mobile Heder -->
-  <ul class="lg:hidden inset-x-0 z-50 bg-gray-700/60 backdrop-blur flex items-center justify-evenly py-2">
+  <ul class="lg:hidden inset-x-0 z-50 bg-[#535C91] backdrop-blur flex items-center justify-evenly py-2">
     <li class="hover:text-white text-gray-200">
       <a href="#" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />PC
