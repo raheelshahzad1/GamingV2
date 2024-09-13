@@ -8,7 +8,7 @@ import Recommend from "./Recommend.vue";
 import Bestsellers from "./Bestsellers.vue";
 </script>
 <template>
-  <div class="bg-slate-200">
+  <div class="bg-stone-200">
     <Hero />
     <!-- <Tittle Title="Trending" /> -->
     <NewGames />
