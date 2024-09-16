@@ -7,6 +7,7 @@ import Recommend from "./Recommend.vue";
 import Banner from "./Banner.vue";
 import Categories from "./Categories.vue";
 import Deals from "./Deals.vue";
+import Footer from './Footer.vue'
 </script>
 <template>
   <div class="bg-stone-200">
@@ -18,6 +19,7 @@ import Deals from "./Deals.vue";
     <Banner />
     <Categories />
     <Deals />
+    <Footer />
   </div>
 </template>
 <style scoped></style>

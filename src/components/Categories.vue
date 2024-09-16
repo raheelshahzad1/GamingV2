@@ -9,7 +9,7 @@ import { ChevronDownIcon } from "@heroicons/vue/24/solid";
       <h1 class="text-xl font-semibold text-gray-600">Categories</h1>
     </div>
     <div
-      class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-8"
+      class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-5"
     >
       <Categorie v-for="(item, index) in 12" :key="index" />
     </div>

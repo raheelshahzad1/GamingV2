@@ -1,5 +1,6 @@
 <script setup>
 import Game from "./Game.vue";
+import Deal from "./Deal.vue";
 import { ChevronRightIcon } from "@heroicons/vue/24/solid";
 </script>
 <template>
@@ -9,9 +10,9 @@ import { ChevronRightIcon } from "@heroicons/vue/24/solid";
         Weekly deals
       </h1>
     </div>
-    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      <Game v-for="(item, index) in 8" :key="index" />
-    </div> -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <Deal v-for="(item, index) in 3" :key="index" />
+    </div>
   </div>
 </template>
 <style scoped></style>

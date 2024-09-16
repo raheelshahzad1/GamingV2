@@ -4,7 +4,8 @@ import { ShoppingCartIcon, EyeIcon } from "@heroicons/vue/24/solid";
 const isHovered = ref(false);
 </script>
 <template>
-  <div class="text-white">
+  <router-link to="/game">
+    <div class="text-white">
     <div class="game relative">
       <div
         class="group overflow-hidden rounded-lg"
@@ -25,7 +26,7 @@ const isHovered = ref(false);
           </div>
           <img
             v-if="!isHovered"
-            src="../assets/images/Game.png"
+            src="https://gaming-cdn.com/images/products/14344/380x218/star-wars-outlaws-pc-game-ubisoft-connect-cover.jpg?v=1726484400"
             alt=""
             class="w-full rounded-lg transition-opacity duration-500 delay-150"
           />
@@ -56,6 +57,7 @@ const isHovered = ref(false);
       </div>
     </div>
   </div>
+  </router-link>
 </template>
 
 <style scoped></style>

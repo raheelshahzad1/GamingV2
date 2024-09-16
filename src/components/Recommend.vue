@@ -4,7 +4,8 @@ import Game from "./Game.vue";
 import { ChevronRightIcon } from "@heroicons/vue/24/solid";
 </script>
 <template>
-  <div class="max-w-7xl mx-auto mb-8 md:mb-20 px-4">
+  <router-link to="/recommend">
+    <div class="max-w-7xl mx-auto mb-8 md:mb-20 px-4">
     <div class="flex justify-start items-center mb-4 gap-1">
       <h1 class="text-xl font-semibold text-gray-600">
         We recommend you
@@ -33,5 +34,6 @@ import { ChevronRightIcon } from "@heroicons/vue/24/solid";
       <Game v-for="(item, index) in 8" :key="index" />
     </div>
   </div>
+  </router-link>
 </template>
 <style scoped></style>

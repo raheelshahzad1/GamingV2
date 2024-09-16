@@ -1,6 +1,7 @@
 <script setup></script>
 <template>
-  <div class="relative h-[250px] sm:h-[440px] mb-8 md:mb-20">
+  <router-link to="/hero">
+    <div class="relative h-[250px] sm:h-[440px] mb-8 md:mb-20">
     <img src="https://gaming-cdn.com/img/products/10140/hcover/1400x500/10140.jpg?v=1725274116" alt=""
       class="w-full h-full object-cover" />
     <div class="absolute inset-0  bg-[#535C91] opacity-40"></div>
@@ -18,4 +19,5 @@
       </div>
     </div>
   </div>
+  </router-link>
 </template>
