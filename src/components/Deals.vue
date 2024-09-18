@@ -1,5 +1,4 @@
 <script setup>
-import Game from "./Game.vue";
 import Deal from "./Deal.vue";
 import { ChevronRightIcon } from "@heroicons/vue/24/solid";
 </script>

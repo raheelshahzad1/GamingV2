@@ -4,7 +4,6 @@ import Game from "./Game.vue";
 import { ChevronRightIcon } from "@heroicons/vue/24/solid";
 </script>
 <template>
-  <router-link to="/recommend">
     <div class="max-w-7xl mx-auto mb-8 md:mb-20 px-4">
     <div class="flex justify-start items-center mb-4 gap-1">
       <h1 class="text-xl font-semibold text-gray-600">
@@ -12,6 +11,7 @@ import { ChevronRightIcon } from "@heroicons/vue/24/solid";
       </h1>
       <ChevronRightIcon class="size-4 mt-[5px] text-gray-600" />
     </div>
+    <router-link to="#">
     <div class="relative h-[250px] sm:h-[440px] mb-6">
     <img src="https://gaming-cdn.com/img/products/9093/hcover/1400x500/9093.jpg?v=1715876608" alt=""
       class="w-full h-full object-cover rounded-lg" />
@@ -30,10 +30,10 @@ import { ChevronRightIcon } from "@heroicons/vue/24/solid";
       </div>
     </div>
   </div>
+</router-link>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <Game v-for="(item, index) in 8" :key="index" />
     </div>
   </div>
-  </router-link>
 </template>
 <style scoped></style>

@@ -26,7 +26,7 @@
       <hr class="border-[#322f6f] my-12"/>
       <div class="grid max-sm:grid-cols-1 max-lg:grid-cols-2 lg:grid-cols-4 gap-8 pb-12">
         <div>
-            <router-link to="/contact">
+            <router-link to="/">
         <img src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg" alt="logo" class="h-9 mb-3" />
       </router-link>
           <p class="text-gray-400 mb-2 text-sm">
@@ -37,22 +37,22 @@
           <h4 class="text-lg font-bold mb-6 text-gray-200">User Terms & Privacy</h4>
           <ul class="space-y-4">
             <li>
-              <router-link to="/contact" class="text-gray-400 hover:text-gray-300 text-[15px]">
+              <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 Terms & Conditions
             </router-link>
             </li>
             <li>
-              <router-link to="/contact" class="text-gray-400 hover:text-gray-300 text-[15px]">
+              <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 Returns & Refunds
                 </router-link>
             </li>
             <li>
-              <router-link to="/contact" class="text-gray-400 hover:text-gray-300 text-[15px]">
+              <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 Privacy Policy
                 </router-link  >
             </li>
             <li>
-              <router-link to="/contact" class="text-gray-400 hover:text-gray-300 text-[15px]">
+              <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 Cookie Policy
                 </router-link>
             </li>
@@ -62,24 +62,24 @@
           <h4 class="text-lg font-bold mb-6 text-gray-200">Popular Categories</h4>
           <ul class="space-y-4">
             <li>
-              <router-link to="/contact" class="text-gray-400 hover:text-gray-300 text-[15px]">
+              <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 Action
                 </router-link
               >
             </li>
             <li>
-              <router-link to="/contact" class="text-gray-400 hover:text-gray-300 text-[15px]">
+              <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 Adventure
                 </router-link
               >
             </li>
             <li>
-              <router-link to="/contact" class="text-gray-400 hover:text-gray-300 text-[15px]">
+              <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 RPG
                 </router-link>
             </li>
             <li>
-              <router-link to="/contact" class="text-gray-400 hover:text-gray-300 text-[15px]">
+              <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 Anime
                 </router-link>
             </li>
@@ -90,13 +90,13 @@
           <ul class="space-y-4">
             <li>
                 <u>
-              <router-link to="/contact" class="text-gray-400 hover:text-gray-300 text-[15px]">
+              <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 support@gaminguin.com
                 </router-link>
             </u>
             </li>
             <li>
-            <router-link to="/contact" class="text-gray-400 hover:text-gray-300 text-[15px]">
+            <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 Live chat
             </router-link>
             </li>

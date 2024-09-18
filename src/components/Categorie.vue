@@ -1,6 +1,5 @@
-<script setup></script>
 <template>
-  <router-link to="/categorie">
+  <router-link to="#">
     <div class="text-white ">
     <div class="game relative ">
       <div class="group">
@@ -23,4 +22,3 @@
   </div>
   </router-link>
 </template>
-<style scoped></style>

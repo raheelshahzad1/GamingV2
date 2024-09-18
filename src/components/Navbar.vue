@@ -39,13 +39,13 @@ onUnmounted(() => {
   <!-- Top Menu -->
   <ul class="top-menu hidden bg-[#050c25] lg:flex justify-center items-center py-2">
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-          <router-link to="/bestseller" class="text-sm mr-2">Bestsellers</router-link>
+          <router-link to="#" class="text-sm mr-2">Bestsellers</router-link>
         </li>
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-          <router-link to="/newGame" class="text-sm mr-2">New Games</router-link>
+          <router-link to="#" class="text-sm mr-2">New Games</router-link>
         </li>
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-          <router-link to="/saveGame" class="text-sm">Save With "GAMING0E70"</router-link>
+          <router-link to="#" class="text-sm">Save With "GAMING0E70"</router-link>
         </li>
   </ul>
   <header class="relative text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center py-2 px-3 md:px-5 transition-colors duration-300">
@@ -60,22 +60,22 @@ onUnmounted(() => {
       <ul class="bottom-menu overflow-hidden backdrop-blur flex items-center rounded-full relative">
         <li
           class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <router-link to="/pc" class="flex items-center">
+          <router-link to="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />PC
           </router-link>
         </li>
         <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <router-link to="/playStation" class="flex items-center">
+          <router-link to="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />PlayStation
           </router-link>
         </li>
         <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <router-link to="/xbox" class="flex items-center">
+          <router-link to="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />Xbox
           </router-link>
         </li>
         <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <router-link to="/nintendo" class="flex items-center">
+          <router-link to="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />Nintendo
           </router-link>
         </li>
@@ -147,22 +147,22 @@ onUnmounted(() => {
   <!-- Mobile Heder -->
   <ul class="lg:hidden inset-x-0 z-50 bg-[#535C91] backdrop-blur flex items-center justify-evenly py-2">
     <li class="hover:text-white text-gray-200">
-      <router-link to="/pc" class="flex items-center text-sm sm:text-md md:text-lg">
+      <router-link to="#" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />PC
       </router-link>
     </li>
     <li class="hover:text-white text-gray-200">
-      <router-link to="/playStation" class="flex items-center text-sm sm:text-md md:text-lg">
+      <router-link to="#" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />PlayStation
       </router-link>
     </li>
     <li class="hover:text-white text-gray-200">
-      <router-link to="/xbox" class="flex items-center text-sm sm:text-md md:text-lg">
+      <router-link to="#" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />Xbox
       </router-link>
     </li>
     <li class="hover:text-white text-gray-200">
-      <router-link to="/nintendo" class="flex items-center text-sm sm:text-md md:text-lg">
+      <router-link to="#" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />Nintendo
       </router-link>
     </li>

@@ -8,10 +8,8 @@ const routes = [
   { path: '/login', component: Login },
   { path: '/cart', component: Cart }
 ]
-
 const router = createRouter({
   history: createWebHistory(),
   routes
 })
-
 export default router
