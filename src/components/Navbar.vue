@@ -52,7 +52,7 @@ onUnmounted(() => {
     <!-- Left Menu -->
     <div class="menu-left">
       <router-link to="/">
-        <img src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg" alt="logo" class="h-9" />
+        <img src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg" alt="logo" class="h-7 md:h-9" />
       </router-link>
     </div>
      <!-- Center Menu -->

@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div>
-    <footer class="bg-[#050c25] pt-12 px-10 font-sans tracking-wide">
+    <footer class="bg-[#050c25] pt-12 px-4 md:px-10 font-sans tracking-wide">
       <div class="lg:max-w-[50%] mx-auto text-center">
         <h3 class="text-3xl font-bold text-gray-200">Newsletter</h3>
         <p class="text-sm mt-6 text-gray-400">

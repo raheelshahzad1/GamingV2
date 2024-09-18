@@ -1,4 +1,5 @@
 <script setup>
+import Navbar from "./Navbar.vue";
 import Hero from "./Hero.vue";
 import NewGames from "./NewGames.vue";
 import Services from "./Services.vue";
@@ -11,6 +12,7 @@ import Footer from './Footer.vue'
 </script>
 <template>
   <div class="bg-stone-200">
+    <Navbar />
     <Hero />
     <NewGames />
     <Services />
