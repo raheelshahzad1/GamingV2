@@ -48,7 +48,7 @@ onUnmounted(() => {
           <router-link to="/support" class="text-sm">Support 24/7</router-link>
         </li>
   </ul>
-  <header class="relative text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center py-2 px-3 md:px-5 transition-colors duration-300">
+  <header class="shadow-2xl sticky top-0 z-20 text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center py-2 px-3 md:px-5 transition-colors duration-300">
     <!-- Left Menu -->
     <div class="menu-left">
       <router-link to="/">
