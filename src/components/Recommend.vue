@@ -5,11 +5,10 @@ import { ChevronRightIcon } from "@heroicons/vue/24/solid";
 </script>
 <template>
     <div class="max-w-7xl mx-auto mb-8 md:mb-20 px-4">
-    <div class="flex justify-start items-center mb-4 gap-1">
+    <div class="mb-4">
       <h1 class="text-xl font-semibold text-gray-600">
         We recommend you
       </h1>
-      <ChevronRightIcon class="size-4 mt-[5px] text-gray-600" />
     </div>
     <router-link to="#">
     <div class="relative h-[250px] sm:h-[440px] mb-6">
@@ -18,7 +17,7 @@ import { ChevronRightIcon } from "@heroicons/vue/24/solid";
     <div class="absolute inset-0  bg-black opacity-40 rounded-lg"></div>
     <div class="max-w-7xl mx-auto absolute top-1/2 -translate-y-1/2 px-4 inset-x-0 z-10">
       <div>
-        <h1 class="text-white font-bold text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4">
+        <h1 class="text-white font-bold text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4 w-4/5 md:w-2/5">
           Ghost of Tsushima: Director's Cut
         </h1>
         <div class="discount flex">

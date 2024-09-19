@@ -7,7 +7,7 @@
     <div class="absolute inset-0  bg-[#535C91] opacity-40"></div>
     <div class="max-w-7xl mx-auto absolute top-1/2 -translate-y-1/2 px-4 inset-x-0 z-10">
       <div>
-        <h1 class="text-white font-bold text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4">
+        <h1 class="text-white font-bold text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4 w-4/5 md:w-2/5">
           Warhammer 40,000: Space Marine 2
         </h1>
         <div class="discount flex">

@@ -45,7 +45,7 @@ onUnmounted(() => {
           <router-link to="#" class="text-sm mr-2">New Games</router-link>
         </li>
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-          <router-link to="#" class="text-sm">Save With "GAMING0E70"</router-link>
+          <router-link to="/support" class="text-sm">Support 24/7</router-link>
         </li>
   </ul>
   <header class="relative text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center py-2 px-3 md:px-5 transition-colors duration-300">
