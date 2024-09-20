@@ -6,21 +6,25 @@ const isHovered = ref(false);
 <template>
   <div class="text-white">
     <div class="game relative">
-      <router-link to="#">
+      <router-link to="/gameDetails">
         <div class="group overflow-hidden rounded-lg"
           @mouseenter="isHovered = true"
           @mouseleave="isHovered = false">
           <div class="mb-3 relative">
             <div class="gap-2 opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-50 rounded-lg flex justify-center items-center transition-opacity duration-500 delay-75">
               <div class="rounded-full bg-white text-black hover:bg-black hover:text-white">
+              <router-link to="/gameDetails">
                 <button type="button" class="p-2">
                   <EyeIcon class="size-4 md:size-5 font-bold" />
                 </button>
+              </router-link>
               </div>
               <div class="rounded-full bg-white text-black hover:bg-black hover:text-white">
-                <button type="button" class="p-2">
+                <router-link to="/cart">
+                  <button type="button" class="p-2">
                   <ShoppingCartIcon class="size-4 md:size-5 font-bold" />
                 </button>
+                   </router-link>
               </div>
             </div>
             <img

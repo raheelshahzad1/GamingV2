@@ -112,6 +112,7 @@ onUnmounted(() => {
       <button type="button" class="mx-1 lg:hidden inline" @click="toggleMobileSearch">
         <MagnifyingGlassIcon class="size-6 hover:text-[#070F2B] text-gray-300" />
       </button>
+
       <transition
           enter-active-class="transition ease-out duration-200"
           enter-from-class="transform opacity-0 -translate-y-full scale-y-100"
@@ -132,11 +133,13 @@ onUnmounted(() => {
               </button>
           </div>
     </transition>
+
       <button type="button" class="mx-1">
-        <router-link to="/cart">
+        <RouterLink to="/cart">
           <ShoppingCartIcon class="size-6 md:size-7 hover:text-[#070F2B] text-gray-300" />
-        </router-link>
+        </RouterLink>
       </button>
+
       <button type="button" class="mx-1">
         <router-link to="/login">
           <UserCircleIcon class="size-6 md:size-7 hover:text-[#070F2B] text-gray-300" />
@@ -144,6 +147,7 @@ onUnmounted(() => {
       </button>
     </div>
   </header>
+  
   <!-- Mobile Heder -->
   <ul class="lg:hidden inset-x-0 z-50 bg-[#535C91] backdrop-blur flex items-center justify-evenly py-2">
     <li class="hover:text-white text-gray-200">

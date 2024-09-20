@@ -21,6 +21,7 @@ import { StarIcon } from "@heroicons/vue/24/solid";
             </div>
           </div>
         </div>
+        
         <div class="border-r-0  lg:border-r-2 border-gray-700">
           <div class="flex justify-center items-center">
             <div class="mr-2 text-red-700 size-12">

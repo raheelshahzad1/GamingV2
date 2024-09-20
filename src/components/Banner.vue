@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <router-link to="#">
+  <router-link to="/gameDetails">
     <div class="relative h-[250px] sm:h-[440px] mb-8 md:mb-20">
     <img src="https://gaming-cdn.com/img/products/16024/pcover/1920x620/16024.jpg?v=1725464034" alt=""
       class="w-full h-full object-cover" />

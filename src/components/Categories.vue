@@ -10,8 +10,8 @@ import Categorie from "./Categorie.vue";
       <Categorie v-for="(item, index) in 12" :key="index" />
     </div>
     <div class="flex justify-center items-center">
-      <button type="button" class="px-3 py-2 border-2 border-[#172e80] bg-[#535C91] text-stone-200 hover:text-white rounded-lg font-semibold">
-        Show All
+      <button type="button" class="bg-[#535C91] hover:bg-[#384176] text-white text-sm rounded-full px-5 py-2.5 ml-4 transition-all">
+            Show All
       </button>
     </div>
   </div>

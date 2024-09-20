@@ -1,10 +1,10 @@
 <script setup></script>
 <template>
-  <router-link to="#">
+  <router-link to="/gameDetails">
     <div class="relative h-[250px] sm:h-[440px] mb-8 md:mb-20">
     <img src="https://gaming-cdn.com/img/products/10140/hcover/1400x500/10140.jpg?v=1725274116" alt=""
       class="w-full h-full object-cover" />
-    <div class="absolute inset-0  bg-[#535C91] opacity-40"></div>
+    <div class="absolute inset-0  bg-[#222435] opacity-40"></div>
     <div class="max-w-7xl mx-auto absolute top-1/2 -translate-y-1/2 px-4 inset-x-0 z-10">
       <div>
         <h1 class="text-white font-bold text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4 w-4/5 md:w-2/5">
