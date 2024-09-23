@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.1.5",
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/vue-splide": "^0.6.12",
     "vue": "^3.4.29",
     "vue-router": "^4.4.5"
   },
