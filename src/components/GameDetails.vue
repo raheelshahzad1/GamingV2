@@ -289,7 +289,7 @@ onMounted(() => {
       </div>
       <div class="mb-8 md:mb-20 max-w-7xl mx-auto">
         <h1 class="text-xl font-semibold text-gray-600 mb-4">Reviews</h1>
-        <div class="rounded-lg min-h-32 p-3 bg-stone-300">
+        <div class="rounded-lg min-h-32 p-3 md:p-4 bg-stone-300">
           <div class="border-4 border-green-600 rounded-full px-3 py-2 font-semibold text-green-600 w-fit mx-auto flex items-center justify-center mb-2">
             <span>10</span>
           </div>
