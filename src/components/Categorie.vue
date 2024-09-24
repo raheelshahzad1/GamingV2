@@ -1,24 +1,24 @@
 <template>
-  <router-link to="#">
-    <div class="text-white ">
-    <div class="game relative ">
-      <div class="group">
-        <div class="relative rounded-lg">
-          <div class="gap-2 overflow-hidden opacity-100 absolute inset-0 bg-black bg-opacity-50 rounded-lg flex justify-between items-center">
-            <div>
-                <h1 class="text-lg text-gray-200 font-semibold pl-3">Action</h1>
-            </div>
-            <div>
-                <img src="https://www.instant-gaming.com/themes/igv2/modules/categoryMenu/images/category-icon1.png" alt="" class="transition hover:scale-105 duration-300 ease-in-out">
-            </div>
-          </div>
-          <img
-            src="https://www.instant-gaming.com/themes/igv2/modules/categoryMenu/images/category-background1.jpg"
-            alt=""
-            class="w-full rounded-lg"/>
-        </div>
-      </div>
-    </div>
-  </div>
-  </router-link>
+    <router-link to="#" class="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-3 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+     <div class="flex items-center gap-1">
+      <svg
+        class="h-4 w-4 shrink-0 text-gray-900 dark:text-white"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        viewBox="0 0 24 24">
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 15v5m-3 0h6M4 11h16M5 15h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1Z">
+      </path>
+      </svg>
+      <span class="text-md font-medium text-gray-900 dark:text-white line-clamp-1">Computer &amp; Office</span>
+     </div>
+        <span class="text-sm text-gray-900">234</span>
+    </router-link>
 </template>

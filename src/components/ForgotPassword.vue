@@ -22,12 +22,9 @@ import Footer from "./Footer.vue";
       <input
         type="email"
         class="w-full px-3 md:px-4 h-12 bg-[#04091c] rounded-full text-white border-2 border-transparent focus:outline-none focus:border-[#535C91] hover:border-[#535C91] mb-3 md:mb-4"
-        placeholder="Enter Your Mail..."
-      />
-      <button
-        type="submit"
-        class="bg-[#535C91] hover:bg-[#384176] text-white rounded-full h-12 flex items-center justify-center transition-all w-full font-semibold text-md md:text-lg"
-      >
+        placeholder="Enter Your Mail..."/>
+      <button type="submit"
+        class="bg-[#535C91] hover:bg-[#384176] text-white rounded-full h-12 flex items-center justify-center transition-all w-full font-semibold text-md md:text-lg">
         Submit
       </button>
     </div>

@@ -4,7 +4,7 @@ import Footer from "./Footer.vue";
 </script>
 <template>
   <Navbar />
-  <div class="bg-[#081134]">
+  <div class="bg-[#081134] max-w-7xl mx-auto">
     <div class="px-5 md:px-12 py-14 md:py-20">
       <h1 class="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-200 mb-6 md:mb-10 text-center">
         Instant Gaming Support
@@ -41,6 +41,6 @@ import Footer from "./Footer.vue";
       </div>
     </div>
   </div>
-  <div class="text-center text-gray-200 px-2 py-4 bg-[#0d1b4e]">Aliasing DMCC, Unit 1204, JBC3, Jumeirah Lakes Towers, Dubai, UAE - RN DMCC179752 support@instant-gaming.com</div>
+  <h1 class="text-center text-gray-200 px-2 py-4 bg-[#0d1b4e]">Aliasing DMCC, Unit 1204, JBC3, Jumeirah Lakes Towers, Dubai, UAE - RN DMCC179752 support@instant-gaming.com</h1>
   <Footer />
 </template>

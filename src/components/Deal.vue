@@ -4,25 +4,19 @@ import { ShoppingCartIcon, EyeIcon } from "@heroicons/vue/24/solid";
 const isHovered = ref(false);
 </script>
 <template>
-  <div class="text-white">
     <div class="game relative">
       <router-link to="#">
-        <div
-          class="group overflow-hidden rounded-tr-lg rounded-tl-lg"
+        <div class="group overflow-hidden rounded-tr-lg rounded-tl-lg"
           @mouseenter="isHovered = true"
           @mouseleave="isHovered = false">
           <div class="relative">
             <div class="gap-2 opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center transition-opacity duration-500 delay-75">
-              <div class="rounded-full bg-white text-black hover:bg-black hover:text-white">
-                <button type="button" class="p-2">
+                <button type="button" class="p-2 rounded-full bg-white text-black hover:bg-black hover:text-white">
                   <EyeIcon class="size-4 md:size-5 font-bold" />
                 </button>
-              </div>
-              <div class="rounded-full bg-white text-black hover:bg-black hover:text-white">
-                <button type="button" class="p-2">
+                <button type="button" class="p-2 rounded-full bg-white text-black hover:bg-black hover:text-white">
                   <ShoppingCartIcon class="size-4 md:size-5 font-bold" />
                 </button>
-              </div>
             </div>
             <img
               v-if="!isHovered"
@@ -47,8 +41,7 @@ const isHovered = ref(false);
         <h3 class="text-gray-800 font-bold line-clamp-2 col-span-2">
           Warstride Challenges
         </h3>
-        <div class="font-bold text-gray-700 col-span-1 text-end">36.49€</div>
+        <span class="font-bold text-gray-700 col-span-1 text-end">36.49€</span>
       </div>
     </div>
-  </div>
 </template>

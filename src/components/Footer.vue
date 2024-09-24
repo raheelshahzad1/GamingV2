@@ -1,4 +1,3 @@
-<script setup></script>
 <template>
   <div>
     <footer class="bg-[#050c25] pt-12 px-4 md:px-10 font-sans tracking-wide">
@@ -10,15 +9,11 @@
           community today!
         </p>
         <div class="bg-[#dddddd] flex px-2 py-1.5 rounded-full text-left mt-10">
-          <input
-            type="email"
+          <input type="email"
             placeholder="Enter your email"
-            class="w-full outline-none bg-transparent text-sm pl-4"
-          />
-          <button
-            type="button"
-            class="bg-[#535C91] hover:bg-[#384176] text-white text-sm rounded-full px-5 py-2.5 ml-4 transition-all"
-          >
+            class="w-full outline-none bg-transparent text-sm pl-4"/>
+          <button type="button"
+            class="bg-[#535C91] hover:bg-[#384176] text-white text-sm rounded-full px-5 py-2.5 ml-4 transition-all">
             Submit
           </button>
         </div>
@@ -49,7 +44,7 @@
             <li>
               <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 Privacy Policy
-                </router-link  >
+                </router-link>
             </li>
             <li>
               <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
@@ -64,14 +59,12 @@
             <li>
               <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 Action
-                </router-link
-              >
+                </router-link>
             </li>
             <li>
               <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
                 Adventure
-                </router-link
-              >
+                </router-link>
             </li>
             <li>
               <router-link to="#" class="text-gray-400 hover:text-gray-300 text-[15px]">
@@ -109,4 +102,3 @@
     </footer>
   </div>
 </template>
-<style></style>

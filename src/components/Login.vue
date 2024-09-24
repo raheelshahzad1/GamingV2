@@ -29,10 +29,10 @@ import { XMarkIcon } from "@heroicons/vue/24/solid";
         </form>
         <div class="flex justify-between mt-3 mb-6">
             <router-link to="/signIn">
-                <div class="text-sm hover:text-[#9290C3] text-gray-200">No account yet?</div>
+                <span class="text-sm hover:text-[#9290C3] text-gray-200">No account yet?</span>
             </router-link>
             <router-link to="/forgotPassword">
-                <div class="text-sm hover:text-[#9290C3] text-gray-200">Lost password?</div>
+                <span class="text-sm hover:text-[#9290C3] text-gray-200">Lost password?</span>
             </router-link>
         </div>
         <div class="py-6 border-t-[1px] border-[#322f6f]">
@@ -44,7 +44,7 @@ import { XMarkIcon } from "@heroicons/vue/24/solid";
       </div>
     </div>
     <div class="hidden md:inline">
-      <img src="https://www.instant-gaming.com/themes/igv2/modules/register/images/wallpaper.jpg" class="object-cover h-full"/>
+      <img src="https://www.instant-gaming.com/themes/igv2/modules/register/images/wallpaper.jpg" class="object-cover h-full w-full"/>
     </div>
     <div class="hover:text-[#9290C3] text-gray-200 absolute top-2 right-2">
       <router-link to="/" class="">

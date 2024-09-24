@@ -15,4 +15,3 @@ import { ChevronRightIcon } from "@heroicons/vue/24/solid";
     </div>
   </div>
 </template>
-<style scoped></style>
