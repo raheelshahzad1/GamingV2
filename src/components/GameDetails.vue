@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref,onBeforeUnmount } from "vue";
 import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
 import Game from "./Game.vue";
@@ -15,7 +15,6 @@ import {
   ShoppingCartIcon,
   PencilSquareIcon,
 } from "@heroicons/vue/24/solid";
-// Define image sources
 const images = ref([
   {
     src: "https://gaming-cdn.com/images/products/10140/616x353/warhammer-40-000-space-marine-2-pc-game-steam-cover.jpg?v=1725274116",
@@ -33,24 +32,7 @@ const images = ref([
     src: "https://gaming-cdn.com/images/products/10140/screenshot/warhammer-40-000-space-marine-2-pc-game-steam-wallpaper-3-thumbv2.jpg?v=1725274116",
   },
 ]);
-const thumbnails = ref([
-  {
-    src: "https://gaming-cdn.com/images/products/10140/616x353/warhammer-40-000-space-marine-2-pc-game-steam-cover.jpg?v=1725274116",
-  },
-  {
-    src: "https://gaming-cdn.com/images/products/10140/screenshot/warhammer-40-000-space-marine-2-pc-game-steam-wallpaper-1-big.jpg?v=1725274116",
-  },
-  {
-    src: "https://gaming-cdn.com/images/products/10140/screenshot/warhammer-40-000-space-marine-2-pc-game-steam-wallpaper-2-thumbv2.jpg?v=1725274116",
-  },
-  {
-    src: "https://gaming-cdn.com/images/products/10140/screenshot/warhammer-40-000-space-marine-2-pc-game-steam-wallpaper-5-thumbv2.jpg?v=1725274116",
-  },
-  {
-    src: "https://gaming-cdn.com/images/products/10140/screenshot/warhammer-40-000-space-marine-2-pc-game-steam-wallpaper-3-thumbv2.jpg?v=1725274116",
-  },
-]);
-// Splide options
+const thumbnails = ref(images.value);
 const mainOptions = ref({
   type: "fade",
   heightRatio: 0.5,
@@ -58,7 +40,6 @@ const mainOptions = ref({
   arrows: true,
   cover: true,
 });
-// Reference to Splide instance
 const mainSplide = ref(null);
 // Sync thumbnails with the main slider
 const goToSlide = (index) => {
@@ -66,9 +47,10 @@ const goToSlide = (index) => {
     mainSplide.value.splide.go(index);
   }
 };
-onMounted(() => {
+// Clean up Splide instance on unmount
+onBeforeUnmount(() => {
   if (mainSplide.value) {
-    mainSplide.value.splide.mount();
+    mainSplide.value.splide.destroy();
   }
 });
 </script>
