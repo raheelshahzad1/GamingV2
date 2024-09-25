@@ -5,12 +5,12 @@ import { XMarkIcon, ChevronDoubleLeftIcon } from "@heroicons/vue/24/solid";
   <div class="grid grid-cols-1 md:grid-cols-2 relative h-screen">
     <div class="bg-[#081134]">
       <div class="pt-4 mb-12 flex justify-center">
-        <router-link to="/">
+        <RouterLink to="/">
           <img
             src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg"
             alt="logo"
             class="h-9"/>
-        </router-link>
+        </RouterLink>
       </div>
       <div class="max-w-[570px] mx-auto px-5">
         <h1 class="text-xl md:text-2xl font-semibold text-gray-200 mb-4">
@@ -81,12 +81,12 @@ import { XMarkIcon, ChevronDoubleLeftIcon } from "@heroicons/vue/24/solid";
           </button>
         </form>
         <div class="py-6 flex justify-center">
-          <router-link
+          <RouterLink
             to="/login"
             class="hover:text-[#9290C3] text-gray-200 flex gap-1 items-center">
             <ChevronDoubleLeftIcon class="size-3 mt-[2px]" />
             <div class="text-md">Back</div>
-          </router-link>
+          </RouterLink>
         </div>
       </div>
     </div>
@@ -96,9 +96,9 @@ import { XMarkIcon, ChevronDoubleLeftIcon } from "@heroicons/vue/24/solid";
         class="object-cover h-full w-full"/>
     </div>
     <div class="hover:text-[#9290C3] text-gray-200 absolute top-2 right-2">
-      <router-link to="/" class="">
+      <RouterLink to="/" class="">
         <XMarkIcon class="size-7" />
-      </router-link>
+      </RouterLink>
     </div>
   </div>
 </template>

@@ -5,21 +5,21 @@ const isHovered = ref(false);
 </script>
 <template>
     <div class="game relative">
-      <router-link to="/gameDetails">
+      <RouterLink to="/gameDetails">
         <div class="group overflow-hidden rounded-lg"
           @mouseenter="isHovered = true"
           @mouseleave="isHovered = false">
           <div class="mb-3 relative">
             <div class="gap-2 opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-50 rounded-lg flex justify-center items-center transition-opacity duration-500 delay-75">
                 <button type="button" class="p-2 rounded-full bg-white text-black hover:bg-black hover:text-white">
-                  <router-link to="/gameDetails">
+                  <RouterLink to="/gameDetails">
                   <EyeIcon class="size-4 md:size-5 font-bold" />
-                  </router-link>
+                  </RouterLink>
                 </button>
                 <button type="button" class="p-2 rounded-full bg-white text-black hover:bg-black hover:text-white">
-                    <router-link to="/cart">
+                    <RouterLink to="/cart">
                     <ShoppingCartIcon class="size-4 md:size-5 font-bold" />
-                    </router-link>
+                    </RouterLink>
                 </button>
             </div>
             <img
@@ -35,7 +35,7 @@ const isHovered = ref(false);
             <span class="absolute left-0 top-0 inline-flex items-center rounded-tl-md rounded-br-md bg-red-500 px-2 py-1 text-xs font-medium text-white shadow-none">-55%</span>
           </div>
         </div>
-      </router-link>
+      </RouterLink>
       <div>
         <p class="text-gray-900 text-sm mb-2 line-clamp-2">
           Age of Mythology: Retold Premium Edition Age of Mythology: Retold

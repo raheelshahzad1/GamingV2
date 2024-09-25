@@ -8,7 +8,7 @@ import { ChevronRightIcon } from "@heroicons/vue/24/solid";
       <h1 class="text-xl font-semibold text-gray-600">
         Bestsellers
       </h1>
-      <ChevronRightIcon class="size-4 mt-[5px] text-gray-600" />
+      <ChevronRightIcon class="size-4 mt-[2px] text-gray-600" />
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <Game v-for="(item, index) in 8" :key="index" />

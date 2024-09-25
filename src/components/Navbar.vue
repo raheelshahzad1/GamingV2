@@ -39,45 +39,45 @@ onUnmounted(() => {
   <!-- Top Menu -->
   <ul class="top-menu hidden bg-[#050c25] lg:flex justify-center items-center py-2">
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-          <router-link to="#" class="text-sm mr-2">Bestsellers</router-link>
+          <RouterLink to="#" class="text-sm mr-2">Bestsellers</RouterLink>
         </li>
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-          <router-link to="#" class="text-sm mr-2">New Games</router-link>
+          <RouterLink to="#" class="text-sm mr-2">New Games</RouterLink>
         </li>
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-          <router-link to="/support" class="text-sm">Support 24/7</router-link>
+          <RouterLink to="/support" class="text-sm">Support 24/7</RouterLink>
         </li>
   </ul>
-  <header class="shadow-2xl sticky top-0 z-20 text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center py-2 px-3 md:px-5 transition-colors duration-300">
+  <header class="shadow-2xl sticky top-0 z-20 text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center py-2 px-2 md:px-4 transition-colors duration-300">
     <!-- Left Menu -->
     <div class="menu-left">
-      <router-link to="/">
+      <RouterLink to="/">
         <img src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg" alt="logo" class="h-7 md:h-9" />
-      </router-link>
+      </RouterLink>
     </div>
      <!-- Center Menu -->
     <div class="hidden lg:inline">
       <ul class="bottom-menu overflow-hidden backdrop-blur flex items-center rounded-full relative">
         <li
           class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <router-link to="#" class="flex items-center">
+          <RouterLink to="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />PC
-          </router-link>
+          </RouterLink>
         </li>
         <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <router-link to="#" class="flex items-center">
+          <RouterLink to="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />PlayStation
-          </router-link>
+          </RouterLink>
         </li>
         <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <router-link to="#" class="flex items-center">
+          <RouterLink to="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />Xbox
-          </router-link>
+          </RouterLink>
         </li>
         <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <router-link to="#" class="flex items-center">
+          <RouterLink to="#" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />Nintendo
-          </router-link>
+          </RouterLink>
         </li>
         <li>
           <button class="flex items-center search mx-2 p-3 bg-[#070F2B] rounded-full hover:text-white text-gray-300 cursor-pointer" @click="toggleSearch">
@@ -141,9 +141,9 @@ onUnmounted(() => {
       </button>
 
       <button type="button" class="mx-1">
-        <router-link to="/login">
+        <RouterLink to="/login">
           <UserCircleIcon class="size-6 md:size-7 hover:text-[#070F2B] text-gray-300" />
-        </router-link>
+        </RouterLink>
       </button>
     </div>
   </header>
@@ -151,24 +151,24 @@ onUnmounted(() => {
   <!-- Mobile Heder -->
   <ul class="lg:hidden inset-x-0 z-50 bg-[#535C91] backdrop-blur flex items-center justify-evenly py-2">
     <li class="hover:text-white text-gray-200">
-      <router-link to="#" class="flex items-center text-sm sm:text-md md:text-lg">
+      <RouterLink to="#" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />PC
-      </router-link>
+      </RouterLink>
     </li>
     <li class="hover:text-white text-gray-200">
-      <router-link to="#" class="flex items-center text-sm sm:text-md md:text-lg">
+      <RouterLink to="#" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />PlayStation
-      </router-link>
+      </RouterLink>
     </li>
     <li class="hover:text-white text-gray-200">
-      <router-link to="#" class="flex items-center text-sm sm:text-md md:text-lg">
+      <RouterLink to="#" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />Xbox
-      </router-link>
+      </RouterLink>
     </li>
     <li class="hover:text-white text-gray-200">
-      <router-link to="#" class="flex items-center text-sm sm:text-md md:text-lg">
+      <RouterLink to="#" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />Nintendo
-      </router-link>
+      </RouterLink>
     </li>
   </ul>
 </template>

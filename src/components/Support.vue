@@ -10,34 +10,34 @@ import Footer from "./Footer.vue";
         Instant Gaming Support
       </h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
-          <router-link to="#">
+          <RouterLink to="#">
           <div class="p-5 bg-[#535C91] hover:bg-[#5f6797] flex flex-col items-center justify-center gap-3 rounded-lg h-[250px]">
             <img src="https://www.instant-gaming.com/themes/igv2/modules/contact/images/tile-order.svg" alt="" class="h-14">
             <h1 class="text-gray-200 font-semibold text-lg">Orders & products</h1>
             <p class="text-center text-gray-200 line-clamp-3">Support for key activation and product information.</p>
         </div>
-     </router-link>
-          <router-link to="#">
+     </RouterLink>
+          <RouterLink to="#">
           <div class="p-5 bg-[#535C91] hover:bg-[#5f6797] flex flex-col items-center justify-center gap-3 rounded-lg h-[250px]">
             <img src="https://www.instant-gaming.com/themes/igv2/modules/contact/images/tile-payment.svg" alt="" class="h-14">
             <h1 class="text-gray-200 font-semibold text-lg">Payment</h1>
             <p class="text-center text-gray-200 line-clamp-3">Help with resolving any payment-related issues or questions.</p>
         </div>
-     </router-link>
-          <router-link to="#">
+     </RouterLink>
+          <RouterLink to="#">
           <div class="p-5 bg-[#535C91] hover:bg-[#5f6797] flex flex-col items-center justify-center gap-3 rounded-lg h-[250px]">
             <img src="https://www.instant-gaming.com/themes/igv2/modules/contact/images/tile-security.svg" alt="" class="h-14">
             <h1 class="text-gray-200 font-semibold text-lg">Account & security</h1>
             <p class="text-center text-gray-200 line-clamp-3">Assistance with account management and security.</p>
         </div>
-     </router-link>
-          <router-link to="#">
+     </RouterLink>
+          <RouterLink to="#">
           <div class="p-5 bg-[#535C91] hover:bg-[#5f6797] flex flex-col items-center justify-center gap-3 rounded-lg h-[250px]">
             <img src="https://www.instant-gaming.com/themes/igv2/modules/contact/images/tile-partnership.svg" alt="" class="h-14">
             <h1 class="text-gray-200 font-semibold text-lg">Partnership</h1>
             <p class="text-center text-gray-200 line-clamp-3">Learn how to earn money by promoting our services.</p>
         </div>
-     </router-link>
+     </RouterLink>
       </div>
     </div>
   </div>

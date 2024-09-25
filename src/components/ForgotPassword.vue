@@ -14,10 +14,10 @@ import Footer from "./Footer.vue";
         email with your new password. Check your spam box if you do not receive
         it. In case of any complications, please contact us at this address:
         support@instant-gaming.com
-        <router-link
+        <RouterLink
           to="/support"
           class="hover:text-[#9290C3] text-gray-200 underline"
-          >contact us.</router-link>
+          >contact us.</RouterLink>
       </p>
       <input
         type="email"

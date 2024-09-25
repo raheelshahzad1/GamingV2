@@ -5,7 +5,7 @@ const isHovered = ref(false);
 </script>
 <template>
     <div class="game relative">
-      <router-link to="#">
+      <RouterLink to="#">
         <div class="group overflow-hidden rounded-tr-lg rounded-tl-lg"
           @mouseenter="isHovered = true"
           @mouseleave="isHovered = false">
@@ -36,7 +36,7 @@ const isHovered = ref(false);
             <h2 class="font-semibold text-red-500 py-3">2 remaining days</h2>
           </div>
         </div>
-      </router-link>
+      </RouterLink>
       <div class="grid grid-cols-3 gap-2">
         <h3 class="text-gray-800 font-bold line-clamp-2 col-span-2">
           Warstride Challenges

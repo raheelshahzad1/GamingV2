@@ -6,7 +6,7 @@ import Game from "./Game.vue";
     <div class="mb-4">
       <h1 class="text-xl font-semibold text-gray-600">We recommend you</h1>
     </div>
-    <router-link to="/gameDetails">
+    <RouterLink to="/gameDetails">
       <div class="relative h-[250px] sm:h-[440px] mb-6">
         <img
           src="https://gaming-cdn.com/img/products/9093/hcover/1400x500/9093.jpg?v=1715876608"
@@ -31,7 +31,7 @@ import Game from "./Game.vue";
           </div>
         </div>
       </div>
-    </router-link>
+    </RouterLink>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <Game v-for="(item, index) in 8" :key="index" />
     </div>

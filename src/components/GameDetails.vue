@@ -104,14 +104,14 @@ function openModal() {
           </h1>
           <div class="flex p-2 md:p-3 rounded-full backdrop-blur-md bg-black/30 text-center w-fit mx-auto">
             <div class="border-r border-[#322f6f] px-2">
-              <router-link
+              <RouterLink
                 to="#"
                 class="flex items-center gap-1 hover:text-[#535C91] text-gray-900">
                 <div>
                   <FaceSmileIcon class="size-4 md:size-5 font-bold" />
                 </div>
                 <p class="text-sm">Steam</p>
-              </router-link>
+              </RouterLink>
             </div>
             <div class="border-r border-[#322f6f] items-center px-2 gap-1 hidden lg:flex text-gray-900">
               <CheckIcon class="size-4 md:size-5 font-bold text-green-600" />
@@ -197,12 +197,12 @@ function openModal() {
             reinstated to the Ultramarines. Hold at bay the horrors of the
             galaxy in epic.
           </p>
-          <router-link
+          <RouterLink
             to="#"
             @click.prevent="toggleDescription"
             class="hover:text-[#535C91] text-gray-900 underline">
             {{ isExpanded ? "Read less" : "Read more" }}
-          </router-link>
+          </RouterLink>
         </div>
         <div class="">
           <div class="md:flex items-center mb-3 hidden">
@@ -263,7 +263,7 @@ function openModal() {
           <span>29</span> Reviews
         </h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6  mb-4 md:mb-7">
-          <Review v-for="item  in 6"  />
+          <Review v-for="(item, index) in 6" :key="index"  />
         </div>
         <div class="rounded-lg p-3 md:p-4 bg-stone-300 flex flex-col sm:flex-row justify-between">
          <div class="flex gap-1 md:gap-2 items-center justify-center sm:justify-start mb-3 sm:mb-0">
@@ -278,29 +278,8 @@ function openModal() {
           </button>
         </div>
       </div>
-
-      <!-- <div class="mb-8 md:mb-20 max-w-7xl mx-auto">
-        <h1 class="text-xl font-semibold text-gray-600 mb-4">Reviews</h1>
-        <div class="rounded-lg p-3 md:p-4 bg-stone-300">
-          <div class="border-4 border-green-600 rounded-full px-3 py-2 font-semibold text-green-600 w-fit mx-auto flex items-center justify-center mb-2">
-            <span>10</span>
-          </div>
-          <p class="text-[#535C91] font-semibold text-center">
-            Game review score
-          </p>
-          <p class="text-gray-600 text-center mb-2">
-            based on 142 reviews, all languages included
-          </p>
-          <button
-            @click="openModal"
-            class="bg-[#535C91] hover:bg-[#384176] flex gap-1 items-center justify-center text-gray-200 rounded-full px-3 py-2 transition-all w-fit mx-auto text-sm md:text-lg">
-            <span>Review this game</span>
-            <PencilSquareIcon class="size-4 text-gray-200" />
-          </button>
-        </div>
-      </div> -->
     </div>
-    <!-- Modal -->
+
     <TransitionRoot appear :show="isOpen" as="template">
     <Dialog as="div" @close="closeModal" class="relative z-10">
       <TransitionChild
@@ -324,7 +303,7 @@ function openModal() {
             leave-from="opacity-100 scale-100"
             leave-to="opacity-0 scale-95">
             <DialogPanel class="w-full max-w-md transform overflow-hidden rounded-lg bg-white text-left align-middle shadow-xl transition-all">
-              <DialogTitle as="h3" class="text-lg md:text-xl flex justify-between items-center font-medium leading-6 text-gray-700 p-2 border-b border-gray-200">
+              <DialogTitle as="h3" class="text-lg md:text-xl flex justify-between items-center font-medium leading-6 text-gray-700 p-3 border-b border-gray-200">
                 <h2 class="text-xl md:text-2xl font-semibold text-gray-700">
                  Review
                 </h2>
@@ -332,17 +311,20 @@ function openModal() {
                   <XMarkIcon class="size-6"/>
                 </button>
               </DialogTitle>
-              <div class="p-4">
+              <div class="p-5">
           <label for="message" class="block mb-2 text-md md:text-lg font-medium text-gray-700 dark:text-white">
-            Add Your review
+            Add Product Review
           </label>
+          <input type="text"
+                class="w-full p-2 bg-gray-50 rounded-lg text-gray-900 border-2 text-sm focus:outline-none focus:border-[#535C91] hover:border-[#535C91] mb-2"
+                placeholder="Enter Your Name"/>
           <textarea
             id="message"
             rows="3"
             class="mb-2 block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border-2 focus:outline-none focus:border-[#535C91] hover:border-[#535C91]"
             placeholder="Write your thoughts here..."></textarea>
           <button @click="closeModal"
-          class="bg-[#535C91] hover:bg-[#384176] flex gap-2 items-center justify-center text-gray-200 w-full rounded-full px-2 h-10 transition-all text-md md:text-lg">
+          class="bg-[#535C91] hover:bg-[#384176] flex gap-2 items-center justify-center text-gray-200 w-full rounded-full px-2 h-9 md:h-10 transition-all text-md md:text-lg">
             Submit
           </button>
         </div>
