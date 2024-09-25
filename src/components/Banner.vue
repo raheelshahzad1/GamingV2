@@ -7,7 +7,7 @@
         class="w-full h-full object-cover"/>
       <div class="absolute inset-0 bg-black opacity-40 flex justify-center items-center"></div>
       <div class="absolute inset-0 z-10 flex flex-col justify-center items-center px-2">
-        <h1 class="plz_center text-white font-bold text-center pb-1 text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4 line-clamp-3">
+        <h1 class="text-white font-bold text-center pb-1 text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4 line-clamp-3">
           Age of Mythology: Retold Premium Edition
         </h1>
         <div class="justify-center flex">
