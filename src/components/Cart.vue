@@ -1,7 +1,13 @@
-<script setup></script>
-<template>
-    <div>
-        <h1>I am Cart</h1>
-    </div>
+<template lang="">
+  <div>
+    
+  </div>
 </template>
-<style ></style>
+<script>
+export default {
+  
+}
+</script>
+<style lang="">
+  
+</style>
