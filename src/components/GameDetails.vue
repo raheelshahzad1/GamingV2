@@ -128,7 +128,7 @@ function openModal() {
           </div>
           <div class="grid grid-cols-2 gap-2 mb-3">
             <div class="relative">
-              <select class="text-gray-200 text-sm bg-[#04091c] rounded-lg focus:outline-none focus:border-[#535C91] border-2 border-transparent hover:border-[#535C91] w-full appearance-none h-10 md:h-12 md:text-base pl-3 pr-10">
+              <select class="text-gray-200 text-sm bg-[#04091c] rounded-lg focus:outline-none focus:border-[#535C91] border-2 border-transparent w-full appearance-none h-10 md:h-12 md:text-base pl-3 pr-10">
                 <option class="" selected>PC</option>
                 <option class="">Xbox Series X|S</option>
               </select>
@@ -146,7 +146,7 @@ function openModal() {
               </span>
             </div>
             <div class="relative">
-              <select class="text-sm text-gray-200 bg-[#04091c] h-10 md:h-12 rounded-lg focus:outline-none focus:border-[#535C91] border-2 border-transparent hover:border-[#535C91] w-full appearance-none md:text-base pl-3 pr-10">
+              <select class="text-sm text-gray-200 bg-[#04091c] h-10 md:h-12 rounded-lg focus:outline-none focus:border-[#535C91] border-2 border-transparent w-full appearance-none md:text-base pl-3 pr-10">
                 <option selected>Standard Edition</option>
                 <option>Gold Edition</option>
                 <option>Ultra Edition</option>
@@ -304,24 +304,33 @@ function openModal() {
             leave-to="opacity-0 scale-95">
             <DialogPanel class="w-full max-w-md transform overflow-hidden rounded-lg bg-white text-left align-middle shadow-xl transition-all">
               <DialogTitle as="h3" class="text-lg md:text-xl flex justify-between items-center font-medium leading-6 text-gray-700 p-3 border-b border-gray-200">
-                <h2 class="text-xl md:text-2xl font-semibold text-gray-700">
+                <h2 class="text-lg md:text-xl font-semibold text-gray-700">
                  Review
                 </h2>
                 <button @click="closeModal">
-                  <XMarkIcon class="size-6"/>
+                  <XMarkIcon class="size-5 md:size-6"/>
                 </button>
               </DialogTitle>
               <div class="p-5">
-          <label for="message" class="block mb-2 text-md md:text-lg font-medium text-gray-700 dark:text-white">
-            Add Product Review
-          </label>
+                <div class="flex justify-between items-center mb-2">            
+                  <h2 for="message" class="text-md md:text-lg font-medium text-gray-700 dark:text-white">
+                    Add Review
+                  </h2>
+                  <div class="flex">
+                <StarIcon class="size-4 md:size-5 text-yellow-400" />
+                <StarIcon class="size-4 md:size-5 text-yellow-400" />
+                <StarIcon class="size-4 md:size-5 text-yellow-400" />
+                <StarIcon class="size-4 md:size-5 text-yellow-400" />
+                <StarIcon class="size-4 md:size-5 text-yellow-400" />
+                </div>
+                </div>
           <input type="text"
-                class="w-full p-2 bg-gray-50 rounded-lg text-gray-900 border-2 text-sm focus:outline-none focus:border-[#535C91] hover:border-[#535C91] mb-2"
+                class="transition-all w-full p-1 sm:p-2 bg-gray-50 rounded-md text-gray-900 border-2 text-sm focus:outline-none focus:border-[#535C91] mb-2"
                 placeholder="Enter Your Name"/>
           <textarea
             id="message"
             rows="3"
-            class="mb-2 block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border-2 focus:outline-none focus:border-[#535C91] hover:border-[#535C91]"
+            class="transition-all mb-2 block p-1 sm:p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-md border-2 focus:outline-none focus:border-[#535C91]"
             placeholder="Write your thoughts here..."></textarea>
           <button @click="closeModal"
           class="bg-[#535C91] hover:bg-[#384176] flex gap-2 items-center justify-center text-gray-200 w-full rounded-full px-2 h-9 md:h-10 transition-all text-md md:text-lg">

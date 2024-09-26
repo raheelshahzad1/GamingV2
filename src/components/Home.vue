@@ -9,12 +9,13 @@ import Banner from "./Banner.vue";
 import Categories from "./Categories.vue";
 import Deals from "./Deals.vue";
 import Footer from './Footer.vue'
+const title="New GAME"
 </script>
 <template>
   <div class="bg-stone-200">
     <Navbar />
     <Hero />
-    <NewGames />
+    <NewGames :title="title"/>
     <Services />
     <BestSeller />
     <Recommend />

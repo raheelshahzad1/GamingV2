@@ -1,12 +1,16 @@
 <script setup>
 import Game from "./Game.vue";
 import { ChevronRightIcon } from "@heroicons/vue/24/solid";
+import { defineProps } from "vue";
+const props = defineProps({
+  title:String
+})
 </script>
 <template>
   <div class="max-w-7xl mx-auto mb-8 md:mb-20 px-4">
     <div class="flex justify-start items-center mb-4 gap-1">
       <h1 class="text-xl font-semibold text-gray-600">
-        New Games
+        {{ title }}
       </h1>
       <ChevronRightIcon class="size-4 mt-[2px] text-gray-600" />
     </div>

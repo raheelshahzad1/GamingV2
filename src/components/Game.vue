@@ -26,12 +26,12 @@ const isHovered = ref(false);
               v-if="!isHovered"
               src="https://gaming-cdn.com/images/products/14344/380x218/star-wars-outlaws-pc-game-ubisoft-connect-cover.jpg?v=1726484400"
               alt=""
-              class="w-full rounded-lg transition-opacity duration-500 delay-150"/>
+              class="w-full rounded-lg duration-500 delay-200 transition-all"/>
             <img
               v-else
               src="https://gaming-cdn.com/images/products/17567/380x218/age-of-mythology-retold-premium-edition-premium-edition-pc-game-steam-cover.jpg?v=1726059600"
               alt=""
-              class="w-full rounded-lg transition-opacity duration-300 delay-150"/>
+              class="w-full rounded-lg duration-300 delay-200 transition-all"/>
             <span class="absolute left-0 top-0 inline-flex items-center rounded-tl-md rounded-br-md bg-red-500 px-2 py-1 text-xs font-medium text-white shadow-none">-55%</span>
           </div>
         </div>
