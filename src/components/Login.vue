@@ -4,7 +4,7 @@ import {XMarkIcon} from "@heroicons/vue/24/solid";
 <template>
 <div class="grid grid-cols-2 md:grid-cols-3 relative h-screen">
     <div class="bg-[#081134] col-span-2">
-        <div class="pt-2 md:pt-3 pl-2 md:pl-3 mb-8 md:mb-14">
+        <div class="pt-2 md:pt-8 pl-2 md:pl-8 mb-8 md:mb-14">
             <RouterLink to="/">
                 <img src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg" alt="logo" class="h-8 md:h-9" />
             </RouterLink>
@@ -34,20 +34,20 @@ import {XMarkIcon} from "@heroicons/vue/24/solid";
             </div>
         </div>
     </div>
-    <div class="hidden md:flex justify-center items-center col-span-1 bg-gray-100">
+    <div class="hidden md:flex justify-center items-center col-span-1 bg-stone-200">
         <div class="px-4 lg:px-5">
-          <h1 class="text-3xl lg:text-4xl font-semibold text-gray-900 mb-4 text-center">Come join us!</h1>
+          <h1 class="text-3xl lg:text-4xl font-semibold text-gray-900 mb-3 text-center">Come join us!</h1>
           <p class="text-gray-900 text-sm mb-4 text-center">Sign up now and unlock a world of new opportunities and personalized experiences tailored just for you!</p>
           <RouterLink to="/signIn">
           <button type="submit" class="bg-[#081134] hover:bg-[#152668] text-white rounded-full h-10 flex items-center justify-center md:py-4 transition-all w-full text-md md:text-lg">
                     Sign up
-                </button>
+          </button>
           </RouterLink>
         </div>
     </div>
-    <div class="hover:text-[#9290C3] text-[#4f5a86] absolute top-2 right-2 transition-all">
-        <RouterLink to="/" class="">
-            <XMarkIcon class="size-6 md:size-7" />
+    <div class="p-1 bg-gray-100 md:bg-[#081134] rounded-full text-[#081134] md:text-gray-100 absolute top-2 md:top-5  md:right-5 right-2">
+        <RouterLink to="/">
+            <XMarkIcon class="size-4 md:size-5" />
         </RouterLink>
     </div>
 </div>
