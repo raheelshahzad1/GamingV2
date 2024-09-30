@@ -6,6 +6,7 @@ import ForgotPassword from '../components/ForgotPassword.vue'
 import SignIn from '../components/SignIn.vue'
 import Support from '../components/Support.vue'
 import GameDetails from '../components/GameDetails.vue'
+import Shope from '../components/Shope.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -14,7 +15,8 @@ const routes = [
   { path: '/forgotPassword', component: ForgotPassword },
   { path: '/signIn', component: SignIn },
   { path: '/support', component: Support },
-  { path: '/gameDetails', component: GameDetails }
+  { path: '/gameDetails', component: GameDetails },
+  { path: '/shope', component: Shope }
 ]
 const router = createRouter({
   history: createWebHistory(),

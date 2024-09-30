@@ -39,10 +39,10 @@ onUnmounted(() => {
   <!-- Top Menu -->
   <ul class="top-menu hidden bg-[#050c25] lg:flex justify-center items-center py-2">
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-          <RouterLink to="#" class="text-sm mr-2">Bestsellers</RouterLink>
+          <RouterLink to="/shope" class="text-sm mr-2">Bestsellers</RouterLink>
         </li>
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-          <RouterLink to="#" class="text-sm mr-2">New Games</RouterLink>
+          <RouterLink to="/shope" class="text-sm mr-2">New Games</RouterLink>
         </li>
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
           <RouterLink to="/support" class="text-sm">Support 24/7</RouterLink>
@@ -147,7 +147,6 @@ onUnmounted(() => {
       </button>
     </div>
   </header>
-  
   <!-- Mobile Heder -->
   <ul class="lg:hidden inset-x-0 z-50 bg-[#535C91] backdrop-blur flex items-center justify-evenly py-2">
     <li class="hover:text-white text-gray-200">
