@@ -5,7 +5,7 @@ import {ChevronDoubleLeftIcon,XMarkIcon} from "@heroicons/vue/24/solid";
 <div class="relative">
   <div class="grid grid-cols-2 md:grid-cols-3  h-screen">
 <div class="bg-[#081134] col-span-2">
-  <div class="pt-2 md:pt-8 pl-2 md:pl-8 mb-8 md:mb-14">
+  <div class="pt-2 md:pt-5 pl-2 md:pl-5 mb-8 md:mb-14">
     <RouterLink to="/">
       <img
         src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg"
@@ -69,10 +69,10 @@ import {ChevronDoubleLeftIcon,XMarkIcon} from "@heroicons/vue/24/solid";
               data-original="#000000"/>
           </svg>
         </label>
-        <span class="text-gray-200 ml-1 text-sm sm:text-base">I agree with the
+        <label for="checkbox" class="text-gray-200 ml-1 text-sm sm:text-base">I agree with the
           <a href="#" class="hover:text-[#636eab] text-gray-200 underline transition-all">Terms </a>and
           <a href="#" class="hover:text-[#636eab] text-gray-200 underline transition-all">Privacy policy</a>
-        </span>
+        </label>
       </div>
       <button
         type="submit"
@@ -101,7 +101,7 @@ import {ChevronDoubleLeftIcon,XMarkIcon} from "@heroicons/vue/24/solid";
           </RouterLink>
         </div>
     </div>
-    <div class="p-1 bg-gray-100 md:bg-[#081134] rounded-full text-[#081134] md:text-gray-100 absolute top-2 md:top-5  md:right-5 right-2">
+    <div class="p-1 bg-gray-100 md:bg-[#081134] rounded-full text-[#081134] md:text-gray-100 absolute top-2 md:top-4  md:right-4 right-2">
         <RouterLink to="/">
             <XMarkIcon class="size-4 md:size-5" />
         </RouterLink>

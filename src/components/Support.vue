@@ -4,8 +4,8 @@ import Footer from "./Footer.vue";
 </script>
 <template>
   <Navbar />
-  <div class="bg-[#081134] max-w-7xl mx-auto">
-    <div class="px-5 md:px-12 py-14 md:py-20">
+  <div class="bg-[#081134]">
+    <div class="px-5 md:px-12 py-14 md:py-20 max-w-7xl mx-auto">
       <h1 class="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-200 mb-6 md:mb-10 text-center">
         Instant Gaming Support
       </h1>

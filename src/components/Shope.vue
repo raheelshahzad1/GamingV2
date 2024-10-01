@@ -21,28 +21,30 @@ import {
                 <div class="flex items-center gap-2">
                     <span class="text-gray-700 font-bold text-nowrap text-sm hidden lg:inline">Sort by</span>
                     <div class="relative w-48">
-                        <select class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-300 rounded pl-3 pr-8 py-3 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer">
-                            <option value="brazil">1</option>
-                            <option value="bucharest">Bucharest</option>
-                            <option value="london">London</option>
-                            <option value="washington">Washington</option>
+                        <select class="w-full bg-transparent placeholder:text-slate-400 text-[#535C91] text-sm border border-[#535C91] rounded pl-3 pr-8 py-3 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer">
+                            <option value="DefaultSorting" selected>Default sorting</option>
+                            <option value="latest">Sort by latest</option>
+                            <option value="low">low to high</option>
+                            <option value="high">high to low</option>
+                            <option value="A-Z">Sort by A-Z</option>
+                            <option value="Z-A">Sort by Z-A</option>
                         </select>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="h-5 w-5 ml-1 absolute top-3.5 right-2.5 text-slate-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="h-5 w-5 ml-1 absolute top-3.5 right-2.5 text-[#535C91]">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
                         </svg>
                     </div>
                 </div>
-                <button class="inline lg:hidden p-3 rounded-lg border border-slate-300 hover:border-slate-400 shadow-sm focus:shadow-md transition duration-300 ease">
+                <button class="inline lg:hidden p-3 rounded-lg border border-[#535C91] hover:border-slate-400 shadow-sm focus:shadow-md transition duration-300 ease">
                     <FunnelIcon class="size-5 text-gray-600" />
                 </button>
             </div>
         </div>
         <div class="grid grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-            <div class="col-span-1 hidden lg:inline p-3 border border-slate-300 rounded-lg">
+            <div class="col-span-1 hidden lg:inline p-3 border border-[#535C91] rounded-lg">
                 <p class="text-gray-800 font-semibold mb-3">Categories</p>
                 <ul class="max-h-96 overflow-y-scroll">
                     <li class="mb-1 flex items-center justify-between pr-1">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
+                        <router-link to="#" class="text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
                     <li class="mb-1 flex items-center justify-between pr-1">
@@ -99,7 +101,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-1">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-1" />
+                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-1" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -114,7 +116,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-2">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-2" />
+                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-2" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -129,7 +131,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-3">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-3" />
+                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-3" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -144,7 +146,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-4">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-4" />
+                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-4" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -159,7 +161,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-5">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-5" />
+                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-5" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -174,7 +176,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-6">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-6" />
+                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-6" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -189,7 +191,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-7">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-7" />
+                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-7" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -204,7 +206,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-8">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-8" />
+                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-8" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -219,7 +221,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-9">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-9" />
+                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-9" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -234,7 +236,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-10">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-10" />
+                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-10" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -249,7 +251,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-11">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-11" />
+                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-11" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -264,7 +266,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-12">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-12" />
+                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-12" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -279,7 +281,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-13">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-13" />
+                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-13" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -294,7 +296,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-14">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-14" />
+                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-14" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -309,7 +311,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-15">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-15" />
+                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-15" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -324,7 +326,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-16">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-16" />
+                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-16" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -339,7 +341,7 @@ import {
                     <li class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-17">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#535C91] checked:border-[#535C91]" id="check-17" />
+                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-17" />
                                 <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
@@ -354,33 +356,45 @@ import {
                 </ul>
                 <p class="text-gray-800 font-semibold mb-3">Price</p>
                 <div class="flex gap-2 mb-4">
-                    <input type="number" min="0" value="0" class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-300 rounded p-3 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer" />
-                    <input type="number" value="10000" class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-300 rounded p-3 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer" />
+                    <input type="number" min="0" value="0" class="w-full bg-transparent placeholder:text-slate-400 text-[#535C91] text-sm border border-[#535C91] rounded p-3 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer" />
+                    <input type="number" value="10000" class="w-full bg-transparent placeholder:text-slate-400 text-[#535C91] text-sm border border-[#535C91] rounded p-3 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer" />
                 </div>
                 <button class="flex justify-center w-full bg-[#535C91] hover:bg-[#384176] items-center gap-1 text-gray-200 px-3 py-2 transition-all text-sm md:text-md rounded-lg">
                     <TrashIcon class="size-4" />
                     <span>Clear Filter</span>
                 </button>
             </div>
-            <div class="col-span-3 p-3 border border-slate-300 rounded-lg">
+            <div class="col-span-3 p-3 border border-[#535C91] rounded-lg">
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <Game v-for="(item, index) in 20" :key="index" />
                 </div>
             </div>
         </div>
-        <div>
-            <!-- Pagination -->
+        <div class="flex justify-center md:justify-end py-7 md:py-10 px-4 space-x-1">
+            <button class="rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
+                Prev
+            </button>
+            <button class="min-w-9 rounded-md bg-[#535C91] py-2 px-3 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-[#535C91] focus:shadow-none active:bg-[#535C91] hover:bg-[#535C91] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
+                1
+            </button>
+            <button class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
+                2
+            </button>
+            <button class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
+                3
+            </button>
+            <button class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
+                Next
+            </button>
         </div>
     </div>
 </div>
 <Footer />
 </template>
-
 <style scoped>
 ::-webkit-scrollbar {
     width: 5px;
 }
-
 ::-webkit-scrollbar-thumb {
     background: #a7afdc;
 }

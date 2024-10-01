@@ -4,7 +4,7 @@ import {XMarkIcon} from "@heroicons/vue/24/solid";
 <template>
 <div class="grid grid-cols-2 md:grid-cols-3 relative h-screen">
     <div class="bg-[#081134] col-span-2">
-        <div class="pt-2 md:pt-8 pl-2 md:pl-8 mb-8 md:mb-14">
+        <div class="pt-2 md:pt-5 pl-2 md:pl-5 mb-8 md:mb-14">
             <RouterLink to="/">
                 <img src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg" alt="logo" class="h-8 md:h-9" />
             </RouterLink>
@@ -45,7 +45,7 @@ import {XMarkIcon} from "@heroicons/vue/24/solid";
           </RouterLink>
         </div>
     </div>
-    <div class="p-1 bg-gray-100 md:bg-[#081134] rounded-full text-[#081134] md:text-gray-100 absolute top-2 md:top-5  md:right-5 right-2">
+    <div class="p-1 bg-gray-100 md:bg-[#081134] rounded-full text-[#081134] md:text-gray-100 absolute top-2 md:top-4  md:right-4 right-2">
         <RouterLink to="/">
             <XMarkIcon class="size-4 md:size-5" />
         </RouterLink>
