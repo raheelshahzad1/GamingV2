@@ -1,97 +1,186 @@
 <script setup>
-import Navbar from './Navbar.vue';
-import Footer from './Footer.vue';
-import Game from './Game.vue';
+import { ref } from "vue";
+import Navbar from "./Navbar.vue";
+import Footer from "./Footer.vue";
+import Game from "./Game.vue";
 import {
-    FunnelIcon,
-    TrashIcon
+  FunnelIcon,
+  TrashIcon,
+  ListBulletIcon,
+  TableCellsIcon,
+  XMarkIcon,
 } from "@heroicons/vue/24/solid";
+import {
+  TransitionRoot,
+  TransitionChild,
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+} from "@headlessui/vue";
+const isOpen = ref(false);
+function closeNav() {
+  isOpen.value = false;
+  console.log('close')
+}
+function openNav() {
+  isOpen.value = true;
+  console.log('open')
+}
 </script>
 <template>
-<Navbar />
-<div class="bg-stone-200">
+  <Navbar />
+  <div class="bg-stone-200">
     <div class="max-w-7xl mx-auto">
-        <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 py-4 sm:py-6 md:py-8 lg:py-10 text-center">Gear for Every Gamer</h1>
-        <div class="sm:flex justify-between items-center p-4">
-            <div class="mb-4 sm:mb-0">
-                <h1 class="text-gray-700 font-bold text-xl sm:text-2xl">Action</h1>
-                <p class="text-gray-500 text-sm">472 Products</p>
-            </div>
-            <div class="flex justify-end gap-2">
-                <div class="flex items-center gap-2">
-                    <span class="text-gray-700 font-bold text-nowrap text-sm hidden lg:inline">Sort by</span>
-                    <div class="relative w-48">
-                        <select class="w-full bg-transparent placeholder:text-slate-400 text-[#535C91] text-sm border border-[#535C91] rounded pl-3 pr-8 py-3 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer">
-                            <option value="DefaultSorting" selected>Default sorting</option>
-                            <option value="latest">Sort by latest</option>
-                            <option value="low">low to high</option>
-                            <option value="high">high to low</option>
-                            <option value="A-Z">Sort by A-Z</option>
-                            <option value="Z-A">Sort by Z-A</option>
-                        </select>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="h-5 w-5 ml-1 absolute top-3.5 right-2.5 text-[#535C91]">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
-                        </svg>
-                    </div>
-                </div>
-                <button class="inline lg:hidden p-3 rounded-lg border border-[#535C91] hover:border-slate-400 shadow-sm focus:shadow-md transition duration-300 ease">
-                    <FunnelIcon class="size-5 text-gray-600" />
-                </button>
-            </div>
+      <h1
+        class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 py-4 sm:py-6 md:py-8 lg:py-10 text-center"
+      >
+        Gear for Every Gamer
+      </h1>
+      <div class="sm:flex justify-between items-center p-4">
+        <div class="mb-4 sm:mb-0">
+          <h1 class="text-gray-700 font-bold text-xl sm:text-2xl">Action</h1>
+          <p class="text-gray-500 text-sm">472 Products</p>
         </div>
-        <div class="grid grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-            <div class="col-span-1 hidden lg:inline p-3 border border-[#535C91] rounded-lg">
+        <div class="flex justify-end gap-2">
+          <div class="flex items-center gap-2">
+            <button
+              class="p-2 border hover:bg-[#535C91] hover:text-gray-200 border-slate-400 hover:border-slate-500 rounded-lg"
+            >
+              <ListBulletIcon class="size-5" />
+            </button>
+            <button
+              class="p-2 border hover:bg-[#535C91] hover:text-gray-200 border-slate-400 hover:border-slate-500 rounded-lg"
+            >
+              <TableCellsIcon class="size-5" />
+            </button>
+            <div class="relative w-48">
+              <select
+                class="w-full bg-transparent placeholder:text-slate-400 text-[#535C91] text-sm border border-slate-400 rounded pl-3 pr-8 py-3 transition duration-300 ease focus:outline-none focus:border-slate-500 hover:border-slate-500 shadow-sm focus:shadow-md appearance-none cursor-pointer"
+              >
+                <option value="DefaultSorting" selected>Default sorting</option>
+                <option value="latest">Sort by latest</option>
+                <option value="low">low to high</option>
+                <option value="high">high to low</option>
+                <option value="A-Z">Sort by A-Z</option>
+                <option value="Z-A">Sort by Z-A</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.2"
+                stroke="currentColor"
+                class="h-5 w-5 ml-1 absolute top-3.5 right-2.5 text-[#535C91]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9"
+                />
+              </svg>
+            </div>
+            <button
+              @click="openNav"
+              class="p-2 border hover:bg-[#535C91] hover:text-gray-200 border-slate-400 hover:border-slate-500 rounded-lg"
+            >
+              <FunnelIcon class="size-6" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="p-3 md:p-5 border border-[#535C91] rounded-lg mx-4">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <Game v-for="(item, index) in 20" :key="index" />
+        </div>
+      </div>
+      <div class="flex justify-center py-7 md:py-10 px-4 space-x-1">
+        <button
+          class="rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
+        >
+          Prev
+        </button>
+        <button
+          class="min-w-9 rounded-md bg-[#535C91] py-2 px-3 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-[#535C91] focus:shadow-none active:bg-[#535C91] hover:bg-[#535C91] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
+        >
+          1
+        </button>
+        <button
+          class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
+        >
+          2
+        </button>
+        <button
+          class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
+        >
+          3
+        </button>
+        <button
+          class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2"
+        >
+          Next
+        </button>
+      </div>
+      <div :show="isOpen" class="w-[350px] top-0 bottom-0 left-0 z-50 fixed overflow-y-scroll">
+        <div class="flex justify-between items-center p-4 bg-[#050c25]">
+            <RouterLink to="/">
+        <img src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg" alt="logo" class="h-7 md:h-9" />
+      </RouterLink>
+                  <button @click="closeNav">
+                    <XMarkIcon class="size-5 md:size-6 text-gray-200" />
+                  </button>
+                </div>
+                 <div class="p-4 bg-stone-200">
                 <p class="text-gray-800 font-semibold mb-3">Categories</p>
                 <ul class="max-h-96 overflow-y-scroll">
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
-                    <li class="mb-1 flex items-center justify-between pr-1">
+                    <li class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
@@ -364,38 +453,21 @@ import {
                     <span>Clear Filter</span>
                 </button>
             </div>
-            <div class="col-span-3 p-3 border border-[#535C91] rounded-lg">
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <Game v-for="(item, index) in 20" :key="index" />
-                </div>
-            </div>
-        </div>
-        <div class="flex justify-center md:justify-end py-7 md:py-10 px-4 space-x-1">
-            <button class="rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
-                Prev
-            </button>
-            <button class="min-w-9 rounded-md bg-[#535C91] py-2 px-3 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-[#535C91] focus:shadow-none active:bg-[#535C91] hover:bg-[#535C91] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
-                1
-            </button>
-            <button class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
-                2
-            </button>
-            <button class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
-                3
-            </button>
-            <button class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
-                Next
-            </button>
-        </div>
     </div>
-</div>
-<Footer />
+    </div>
+  </div>
+  <Footer />
 </template>
+
 <style scoped>
 ::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
-    background: #a7afdc;
+  background: #a7afdc;
+}
+::-webkit-scrollbar-track{
+    background: #e7e5e4;
 }
 </style>
