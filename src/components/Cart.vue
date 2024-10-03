@@ -59,7 +59,7 @@ import {
                     <h1 class="text-xl md:text-2xl font-semibold text-gray-600">
                         Recommended
                     </h1>
-                    <div class="py-5 border-b border-stone-400">
+                    <div v-for="(item, index) in 3" :key="index" class="py-5 border-b border-stone-400">
                         <div class="flex justify-between">
                             <div class="flex items-center gap-2 md:gap-3">
                                 <RouterLink to="/gameDetails" class="h-full">
@@ -77,46 +77,6 @@ import {
                                 <span class="text-xs md:text-base">Move to cart </span>
                                 <ArrowLongUpIcon class="size-3 sm:size-4" />
                             </button>
-                        </div>
-                    </div>
-                    <div class="py-5 border-b border-stone-400">
-                        <div class="flex justify-between">
-                            <div class="flex items-center gap-2 md:gap-3">
-                                <div class="h-full">
-                                    <img src="https://gaming-cdn.com/images/products/13615/250x143/13615-cover.jpg?v=1727777270" alt="" class="rounded-lg h-full w-24 sm:w-32 lg:w-48 object-cover">
-                                </div>
-                                <div class="flex flex-col gap-3 justify-between h-full">
-                                    <div class="">
-                                        <h3 class="text-gray-600 font-bold sm:text-base text-sm  md:text-base">For Honor</h3>
-                                        <p class="text-xs sm:text-sm text-gray-600">Ubisoft Connect</p>
-                                    </div>
-                                    <span class="text-gray-600 font-semibold text-sm sm:text-base md:text-base">6.53€</span>
-                                </div>
-                            </div>
-                            <div class="flex gap-1 items-center text-gray-500 hover:text-gray-900 cursor-pointer">
-                                <span class="text-xs md:text-base">Move to cart </span>
-                                <ArrowLongUpIcon class="size-3 sm:size-4" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="py-5 border-b border-stone-400">
-                        <div class="flex justify-between">
-                            <div class="flex items-center gap-2 md:gap-3">
-                                <div class="h-full">
-                                    <img src="https://gaming-cdn.com/images/products/13615/250x143/13615-cover.jpg?v=1727777270" alt="" class="rounded-lg h-full w-24 sm:w-32 lg:w-48 object-cover">
-                                </div>
-                                <div class="flex flex-col gap-3 justify-between h-full">
-                                    <div class="">
-                                        <h3 class="text-gray-600 font-bold sm:text-base text-sm  md:text-base">For Honor</h3>
-                                        <p class="text-xs sm:text-sm text-gray-600">Ubisoft Connect</p>
-                                    </div>
-                                    <span class="text-gray-600 font-semibold text-sm sm:text-base md:text-base">6.53€</span>
-                                </div>
-                            </div>
-                            <div class="flex gap-1 items-center text-gray-500 hover:text-gray-900 cursor-pointer">
-                                <span class="text-xs md:text-base">Move to cart </span>
-                                <ArrowLongUpIcon class="size-3 sm:size-4" />
-                            </div>
                         </div>
                     </div>
                 </div>

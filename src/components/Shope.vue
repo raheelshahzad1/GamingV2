@@ -10,13 +10,6 @@ import {
   TableCellsIcon,
   XMarkIcon,
 } from "@heroicons/vue/24/solid";
-import {
-  TransitionRoot,
-  TransitionChild,
-  Dialog,
-  DialogPanel,
-  DialogTitle,
-} from "@headlessui/vue";
 const isOpen = ref(false);
 function closeNav() {
   isOpen.value = false;
@@ -132,62 +125,14 @@ function openNav() {
                  <div class="p-4 bg-stone-200">
                 <p class="text-gray-800 font-semibold mb-3">Categories</p>
                 <ul class="max-h-96 overflow-y-scroll">
-                    <li class="mb-1 flex items-center justify-between">
+                    <li v-for="(item, index) in 12" :key="index" class="mb-1 flex items-center justify-between">
                         <router-link to="#" class="text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
-                        <span class="text-gray-500 text-sm">232</span>
-                    </li>
-                    <li class="mb-1 flex items-center justify-between">
-                        <router-link to="#" class="text-gray-600 hover:text-[#8a88d6]">Action</router-link>
                         <span class="text-gray-500 text-sm">232</span>
                     </li>
                 </ul>
                 <p class="text-gray-800 font-semibold mb-3">Platforms</p>
                 <ul>
-                    <li class="mb-1">
+                    <li v-for="(item, index) in 12" :key="index" class="mb-1">
                         <div class="inline-flex items-center">
                             <label class="flex items-center cursor-pointer relative" for="check-1">
                                 <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-1" />
@@ -198,246 +143,6 @@ function openNav() {
                                 </span>
                             </label>
                             <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-1">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-2">
-                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-2" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-2">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-3">
-                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-3" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-3">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-4">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-4" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-4">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-5">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-5" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-5">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-6">
-                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-6" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-6">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-7">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-7" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-7">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-8">
-                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-8" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-8">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-9">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-9" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-9">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-10">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-10" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-10">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-11">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-11" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-11">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-12">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-12" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-12">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-13">
-                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-13" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-13">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-14">
-                                <input checked type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-14" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-14">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-15">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-15" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-15">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-16">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-16" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-16">
-                                Steam
-                            </label>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <div class="inline-flex items-center">
-                            <label class="flex items-center cursor-pointer relative" for="check-17">
-                                <input type="checkbox" class="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-[#535C91] checked:bg-[#535C91] checked:border-[#535C91]" id="check-17" />
-                                <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="cursor-pointer ml-2 text-[#8a88d6] text-sm" for="check-17">
                                 Steam
                             </label>
                         </div>
@@ -458,12 +163,10 @@ function openNav() {
   </div>
   <Footer />
 </template>
-
 <style scoped>
 ::-webkit-scrollbar {
   width: 5px;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #a7afdc;
 }
