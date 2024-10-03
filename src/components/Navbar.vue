@@ -48,7 +48,7 @@ onUnmounted(() => {
           <RouterLink to="/support" class="text-sm">Support 24/7</RouterLink>
         </li>
   </ul>
-  <header class="shadow-2xl sticky top-0 z-20 text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center py-2 px-2 md:px-4 transition-colors duration-300">
+  <header class="shadow-md sticky top-0 z-20 text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center py-2 px-2 md:px-4 transition-colors duration-300">
     <!-- Left Menu -->
     <div class="menu-left">
       <RouterLink to="/">
