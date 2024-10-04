@@ -39,83 +39,61 @@ import {
             <div
               v-for="(item, index) in 3"
               :key="index"
-              class="grid grid-cols-2 md:grid-cols-3 items-start gap-3 md:gap-6 py-4 border-b border-gray-300"
+              class="grid grid-cols-5 gap-3 py-4 border-b border-gray-300"
             >
-              <div class="col-span-2 flex items-start gap-4">
-                <div
-                  class="w-28 h-28 max-sm:w-24 max-sm:h-24 shrink-0 bg-gray-100 p-2 rounded-md"
-                >
+              <div class="col-span-1 bg-gray-100 p-2 rounded-md">
+                <RouterLink to="/gameDetails">
                   <img
                     src="https://readymadeui.com/images/product14.webp"
                     class="w-full h-full object-contain"
                   />
-                </div>
-
-                <div class="flex flex-col">
-                  <h3 class="text-sm sm:text-base font-semibold text-gray-800 line-clamp-3">
+                </RouterLink>
+              </div>
+              <div
+                class="col-span-4 flex justify-between flex-col md:flex-row gap-2 md:gap-4"
+              >
+                <div>
+                  <h3
+                    class="text-sm sm:text-base font-semibold text-gray-800 line-clamp-3"
+                  >
                     Velvet Sneaker Velvet Sneaker Velvet Sneaker Velvet Sneaker
                   </h3>
-
                   <button
-                    type="button"
-                    class="mt-4 md:mt-6 font-semibold text-red-500 text-xs flex items-center gap-1 shrink-0"
+                    class="md:flex hidden text-sm items-center mt-4 md:mt-6 gap-1 font-medium text-red-500 hover:text-red-600"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="w-4 fill-current inline"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 7a1 1 0 0 0-1 1v11.191A1.92 1.92 0 0 1 15.99 21H8.01A1.92 1.92 0 0 1 6 19.191V8a1 1 0 0 0-2 0v11.191A3.918 3.918 0 0 0 8.01 23h7.98A3.918 3.918 0 0 0 20 19.191V8a1 1 0 0 0-1-1Zm1-3h-4V2a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v2H4a1 1 0 0 0 0 2h16a1 1 0 0 0 0-2ZM10 4V3h4v1Z"
-                        data-original="#000000"
-                      ></path>
-                      <path
-                        d="M11 17v-7a1 1 0 0 0-2 0v7a1 1 0 0 0 2 0Zm4 0v-7a1 1 0 0 0-2 0v7a1 1 0 0 0 2 0Z"
-                        data-original="#000000"
-                      ></path>
-                    </svg>
-                    REMOVE
+                    <TrashIcon class="size-4" />
+                    <span>REMOVE</span>
                   </button>
                 </div>
-              </div>
-
-              <div class="col-span-2 md:col-span-1">
-                <h4 class="text-lg max-sm:text-base font-bold text-gray-800 md:text-end">
-                  $20.00
-                </h4>
-
-                <button
-                  type="button"
-                  class="mt-3 md:mt-6 md:ml-auto flex items-center px-3 py-1.5 border border-gray-300 text-gray-800 text-xs outline-none bg-transparent rounded-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-2.5 fill-current"
-                    viewBox="0 0 124 124"
+                <div>
+                  <h4
+                    class="text-lg max-sm:text-base font-bold text-gray-800 md:text-end mb-2"
                   >
-                    <path
-                      d="M112 50H12C5.4 50 0 55.4 0 62s5.4 12 12 12h100c6.6 0 12-5.4 12-12s-5.4-12-12-12z"
-                      data-original="#000000"
-                    ></path>
-                  </svg>
-
-                  <span class="mx-3 font-bold">2</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-2.5 fill-current"
-                    viewBox="0 0 42 42"
-                  >
-                    <path
-                      d="M37.059 16H26V4.941C26 2.224 23.718 0 21 0s-5 2.224-5 4.941V16H4.941C2.224 16 0 18.282 0 21s2.224 5 4.941 5H16v11.059C16 39.776 18.282 42 21 42s5-2.224 5-4.941V26h11.059C39.776 26 42 23.718 42 21s-2.224-5-4.941-5z"
-                      data-original="#000000"
-                    ></path>
-                  </svg>
-                </button>
+                    $20.00
+                  </h4>
+                  <div class="flex items-center gap-2">
+                    <div class="flex border border-gray-400">
+                      <button class="py-1 px-2">
+                        <PlusIcon class="size-3" />
+                      </button>
+                      <span class="py-1 px-2 border-l border-r border-gray-400"
+                        >1</span
+                      >
+                      <button class="py-1 px-2">
+                        <MinusIcon class="size-3" />
+                      </button>
+                    </div>
+                    <button class="md:hidden">
+                      <TrashIcon
+                        class="size-5 text-red-500 hover:text-red-600"
+                      />
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
         <div
           class="shadow-[0_-5px_5px_-5px_grey] sm:shadow-none border-t bg-gray-100 sm:rounded-md p-2 sm:p-4 h-max sticky sm:relative bottom-0 inset-x-0 w-full"
         >
