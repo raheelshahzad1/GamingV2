@@ -37,12 +37,12 @@ import {
                 </div> -->
 
             <div v-for="(item, index) in 3" :key="index" class="flex gap-10 py-4 border-b border-gray-300">
-              <div class="shrink-0 h-28 w-28 bg-gray-50 p-3 rounded-md">
+              <div class="shrink-0 h-32 w-32 sm:h-28 :w-28 bg-gray-50 p-3 rounded-md">
                 <img src="https://readymadeui.com/images/product14.webp" class="w-full h-full object-contain" />
               </div>
 
-              <div class="w-full flex flex-col sm:flex-row gap-6 sm:gap-10">
-                <div class="grow">
+              <div class="w-full flex flex-col sm:flex-row gap-3 sm:gap-10">
+                <div class="sm:grow">
                   <h3 class="text-sm sm:text-base font-semibold text-gray-800 line-clamp-3">
                     Velvet Sneaker Velvet Sneaker Velvet Sneaker Velvet Sneaker
                   </h3>
@@ -54,16 +54,12 @@ import {
                   </button>
                 </div>
 
-                <div class="flex sm:flex-col gap-8 items-end">
+                <div class="items-end">
                   <h4 class="text-lg max-sm:text-base font-bold text-gray-800 mb-2">
                     $20.00
                   </h4>
 
                   <div class="flex items-center gap-2">
-                    <button class="md:hidden">
-                      <TrashIcon class="size-4 text-red-500 hover:text-red-600" />
-                    </button>
-
                     <div class="flex rounded-md border border-gray-400">
                       <button class="h-8 w-8 flex items-center justify-center">
                         <PlusIcon class="size-3" />
@@ -77,6 +73,9 @@ import {
                         <MinusIcon class="size-3" />
                       </button>
                     </div>
+                    <button class="md:hidden">
+                      <TrashIcon class="size-4 text-red-500 hover:text-red-600" />
+                    </button>
                   </div>
                 </div>
               </div>
