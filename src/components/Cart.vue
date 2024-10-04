@@ -94,6 +94,7 @@ import {
             </div>
           </div>
         </div>
+
         <div
           class="shadow-[0_-5px_5px_-5px_grey] sm:shadow-none border-t bg-gray-100 sm:rounded-md p-2 sm:p-4 h-max sticky sm:relative bottom-0 inset-x-0 w-full"
         >
