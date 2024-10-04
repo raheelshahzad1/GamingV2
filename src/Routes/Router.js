@@ -7,6 +7,7 @@ import SignIn from '../components/SignIn.vue'
 import Support from '../components/Support.vue'
 import GameDetails from '../components/GameDetails.vue'
 import Shope from '../components/Shope.vue'
+import CategoryPage from '../components/CategoryPage.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -16,7 +17,8 @@ const routes = [
   { path: '/signIn', component: SignIn },
   { path: '/support', component: Support },
   { path: '/gameDetails', component: GameDetails },
-  { path: '/shope', component: Shope }
+  { path: '/shope', component: Shope },
+  { path: '/categoryPage', component: CategoryPage }
 ]
 const router = createRouter({
   history: createWebHistory(),

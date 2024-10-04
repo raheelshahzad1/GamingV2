@@ -11,7 +11,7 @@ import Deals from "./Deals.vue";
 import Footer from './Footer.vue'
 </script>
 <template>
-  <div class="bg-stone-200">
+  <div>
     <Navbar />
     <Hero />
     <NewGames />

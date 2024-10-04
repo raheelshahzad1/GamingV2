@@ -2,7 +2,7 @@
 import {StarIcon,UserIcon} from "@heroicons/vue/24/solid";
 </script>
 <template>
-    <div class="p-4 bg-stone-300 rounded-lg flex gap-4 items-start">
+    <div class="p-4 bg-stone-50 border rounded-lg flex gap-4 items-start">
             <div class="p-2 rounded-full bg-stone-400">
                 <UserIcon class="size-5 text-gray-200" />
             </div>
