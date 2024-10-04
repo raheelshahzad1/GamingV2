@@ -23,7 +23,6 @@ import {
       <div class="grid md:grid-cols-3 gap-8 mt-16">
         <div class="md:col-span-2 space-y-4">
           <div class="px-4 sm:px-0">
-
             <!-- <div class="p-5 sm:p-8 bg-gray-100 rounded-xl">
                     <ShoppingCartIcon class="size-12 md:size-16 text-[#0c1b51] mx-auto" />
                     <h1 class="text-xl md:text-2xl font-semibold text-gray-600 my-3 md:my-5 text-center">
@@ -36,11 +35,12 @@ import {
                         </router-link>
                     </div>
                 </div> -->
-                
-                <div
+
+            <div
               v-for="(item, index) in 3"
               :key="index"
-              class="grid grid-cols-3 items-start gap-6 py-4 border-b border-gray-300">
+              class="grid grid-cols-3 items-start gap-6 py-4 border-b border-gray-300"
+            >
               <div class="col-span-2 flex items-start gap-4">
                 <div
                   class="w-28 h-28 max-sm:w-24 max-sm:h-24 shrink-0 bg-gray-100 p-2 rounded-md"
@@ -120,7 +120,7 @@ import {
         </div>
 
         <div
-          class=" shadow-lg sm:shadow-none bg-gray-100 sm:rounded-md p-2 sm:p-4 h-max sticky sm:relative bottom-0 inset-x-0 w-full"
+          class="shadow-[0_-5px_5px_-5px_grey] sm:shadow-none border-t bg-gray-100 sm:rounded-md p-2 sm:p-4 h-max sticky sm:relative bottom-0 inset-x-0 w-full"
         >
           <h3
             class="hidden sm:block text-lg max-sm:text-base font-bold text-gray-800 border-b border-gray-300 pb-2"

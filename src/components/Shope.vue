@@ -160,7 +160,7 @@ const openFilters = () =>{
         </div>
 
         <transition name="slide">
-            <div v-if="isOpen" class="fixed z-[200] w-[240px] inset-y-0 h-screen left-0 transition duration-300 ease-in-out overflow-y-scroll">
+            <div v-if="isOpen" class="fixed z-[200] w-[240px] inset-y-0 h-screen left-0 transition duration-300 ease-in-out overflow-y-scroll̥">
                 <div class="flex justify-between items-center p-4 bg-[#050c25]">
                     <RouterLink to="/">
                         <img src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg" alt="logo" class="h-7 md:h-9" />
