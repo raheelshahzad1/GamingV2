@@ -39,7 +39,7 @@ import {
             <div
               v-for="(item, index) in 3"
               :key="index"
-              class="grid grid-cols-3 items-start gap-6 py-4 border-b border-gray-300"
+              class="grid grid-cols-2 md:grid-cols-3 items-start gap-3 md:gap-6 py-4 border-b border-gray-300"
             >
               <div class="col-span-2 flex items-start gap-4">
                 <div
@@ -52,16 +52,13 @@ import {
                 </div>
 
                 <div class="flex flex-col">
-                  <h3 class="text-base font-bold text-gray-800">
-                    Velvet Sneaker
+                  <h3 class="text-sm sm:text-base font-semibold text-gray-800 line-clamp-3">
+                    Velvet Sneaker Velvet Sneaker Velvet Sneaker Velvet Sneaker
                   </h3>
-                  <p class="text-xs font-semibold text-gray-500 mt-0.5">
-                    Size: MD
-                  </p>
 
                   <button
                     type="button"
-                    class="mt-6 font-semibold text-red-500 text-xs flex items-center gap-1 shrink-0"
+                    class="mt-4 md:mt-6 font-semibold text-red-500 text-xs flex items-center gap-1 shrink-0"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -82,14 +79,14 @@ import {
                 </div>
               </div>
 
-              <div class="ml-auto">
-                <h4 class="text-lg max-sm:text-base font-bold text-gray-800">
+              <div class="col-span-2 md:col-span-1">
+                <h4 class="text-lg max-sm:text-base font-bold text-gray-800 md:text-end">
                   $20.00
                 </h4>
 
                 <button
                   type="button"
-                  class="mt-6 flex items-center px-3 py-1.5 border border-gray-300 text-gray-800 text-xs outline-none bg-transparent rounded-md"
+                  class="mt-3 md:mt-6 md:ml-auto flex items-center px-3 py-1.5 border border-gray-300 text-gray-800 text-xs outline-none bg-transparent rounded-md"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

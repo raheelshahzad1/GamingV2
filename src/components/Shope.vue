@@ -137,7 +137,7 @@ const openFilters = () =>{
             </div>
         </div>
 
-        <div class="flex justify-center md:justify-end py-7 md:py-10 px-4 space-x-1">
+        <div class="flex justify-center lg:justify-end py-7 md:py-10 px-4 space-x-1">
             <button class="rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
                 Prev
             </button>
@@ -160,8 +160,8 @@ const openFilters = () =>{
         </div>
 
         <transition name="slide">
-            <div v-if="isOpen" class="fixed z-[200] w-[240px] inset-y-0 h-screen left-0 transition duration-300 ease-in-out overflow-y-scroll̥">
-                <div class="flex justify-between items-center p-4 bg-[#050c25]">
+            <div v-if="isOpen" class="fixed z-[200] w-[240px] inset-y-0 h-screen left-0 transition duration-300 ease-in-out overflow-y-scroll">
+                <div class="flex justify-between items-center p-3 md:p-4 bg-[#050c25]">
                     <RouterLink to="/">
                         <img src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg" alt="logo" class="h-7 md:h-9" />
                     </RouterLink>
@@ -203,16 +203,13 @@ const openFilters = () =>{
               </div>
 
                   <div>
-                    <p class="text-gray-800 font-semibold mb-3 mt-3">Price</p>
-                    <div>
-                        <p class="text-gray-600 mb-3 font-medium">Adjust Price</p>
+                    <p class="text-gray-800 font-semibold mb-3 mt-3">Adjust Price</p>
                         <input type="range" value="10" class="w-full cursor-pointer focus:outline-none" />
                         <div class="flex justify-between gap-2 text-gray-600 text-xs mb-3">
                             <span>Min (0€)</span>
                             <span>500€</span>
                             <span>Max (1000€)</span>
                         </div>
-                    </div>
                   </div>
 
                     <button class="flex justify-center w-full bg-[#535C91] hover:bg-[#384176] items-center gap-1 text-gray-200 px-3 py-2 transition-all text-sm md:text-md rounded-lg">
