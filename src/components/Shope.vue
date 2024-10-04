@@ -131,11 +131,17 @@ const openFilters = () =>{
             </div>
 
             <div class="lg:w-[70%] w-full">
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4 md:mb-7">
                         <Game v-for="(item, index) in 16" :key="index" />
                     </div>
+                    <div class="flex justify-center items-center mb-6 md:mb-10">
+      <button type="button" class="bg-[#535C91] hover:bg-[#384176] text-white text-sm md:text-lg rounded-full px-5 py-2.5 transition-all ">
+            Show More
+      </button>
+    </div>
             </div>
         </div>
+
 
         <transition name="slide">
             <div v-if="isOpen" class="fixed z-[200] w-[240px] inset-y-0 h-screen left-0 transition duration-300 ease-in-out overflow-y-scroll">
@@ -196,7 +202,7 @@ const openFilters = () =>{
                     </button>
                 </div>
             </div>
-        </transition>l̥
+        </transition>
     </div>
 </div>
 

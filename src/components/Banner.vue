@@ -1,5 +1,5 @@
 <template>
-  <RouterLink to="/gameDetails">
+  <RouterLink to="/game-details">
     <div class="relative h-[250px] sm:h-[440px] mb-8 md:mb-20">
       <img
         src="https://gaming-cdn.com/img/products/16024/pcover/1920x620/16024.jpg?v=1725464034"

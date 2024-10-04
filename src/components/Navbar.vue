@@ -48,7 +48,7 @@ onUnmounted(() => {
           <RouterLink to="/support" class="text-sm">Support 24/7</RouterLink>
         </li>
   </ul>
-  <header class="shadow-md sticky top-0 z-20 text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center py-2 px-2 md:px-4 transition-colors duration-300">
+  <header class="shadow-md sticky top-0 z-20 text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center p-3 transition-colors duration-300">
     <!-- Left Menu -->
     <div class="menu-left">
       <RouterLink to="/">
@@ -108,8 +108,8 @@ onUnmounted(() => {
       </ul>
     </div>
     <!-- Right Menu -->
-    <div id="menu-right" class="flex">
-      <button type="button" class="mx-1 lg:hidden inline" @click="toggleMobileSearch">
+    <div id="menu-right" class="flex gap-1">
+      <button type="button" class="lg:hidden inline" @click="toggleMobileSearch">
         <MagnifyingGlassIcon class="size-6 hover:text-[#070F2B] text-gray-300" />
       </button>
 
@@ -134,13 +134,13 @@ onUnmounted(() => {
           </div>
     </transition>
 
-      <button type="button" class="mx-1">
+      <button type="button">
         <RouterLink to="/cart">
           <ShoppingCartIcon class="size-6 md:size-7 hover:text-[#070F2B] text-gray-300" />
         </RouterLink>
       </button>
 
-      <button type="button" class="mx-1">
+      <button type="button">
         <RouterLink to="/login">
           <UserCircleIcon class="size-6 md:size-7 hover:text-[#070F2B] text-gray-300" />
         </RouterLink>

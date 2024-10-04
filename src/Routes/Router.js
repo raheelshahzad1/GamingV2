@@ -13,12 +13,12 @@ const routes = [
   { path: '/', component: Home },
   { path: '/login', component: Login },
   { path: '/cart', component: Cart },
-  { path: '/forgotPassword', component: ForgotPassword },
+  { path: '/forgot-password', component: ForgotPassword },
   { path: '/signIn', component: SignIn },
   { path: '/support', component: Support },
-  { path: '/gameDetails', component: GameDetails },
+  { path: '/game-details', component: GameDetails },
   { path: '/shope', component: Shope },
-  { path: '/categoryPage', component: CategoryPage }
+  { path: '/category-page', component: CategoryPage }
 ]
 const router = createRouter({
   history: createWebHistory(),

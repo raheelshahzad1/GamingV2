@@ -5,14 +5,14 @@ const isHovered = ref(false);
 </script>
 <template>
     <div class="game relative">
-      <RouterLink to="/gameDetails">
+      <RouterLink to="/game-details">
         <div class="group overflow-hidden rounded-lg"
           @mouseenter="isHovered = true"
           @mouseleave="isHovered = false">
           <div class="mb-3 relative">
             <div class="gap-2 opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-50 rounded-lg flex justify-center items-center transition-opacity duration-500 delay-75">
                 <button type="button" class="p-2 rounded-full bg-white text-black hover:bg-black hover:text-white">
-                  <RouterLink to="/gameDetails">
+                  <RouterLink to="/game-details">
                   <EyeIcon class="size-4 md:size-5 font-bold" />
                   </RouterLink>
                 </button>

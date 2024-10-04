@@ -253,7 +253,7 @@ function openModal() {
         <h1 class="text-xl font-semibold text-gray-600 mb-4">
           Similar products
         </h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           <Game v-for="(item, index) in 8" :key="index" />
         </div>
       </div>
