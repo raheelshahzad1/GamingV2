@@ -8,6 +8,7 @@ import Support from '../components/Support.vue'
 import GameDetails from '../components/GameDetails.vue'
 import Shope from '../components/Shope.vue'
 import CategoryPage from '../components/CategoryPage.vue'
+import OrderFailed from '../components/OrderFailed.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -18,7 +19,8 @@ const routes = [
   { path: '/support', component: Support },
   { path: '/game-details', component: GameDetails },
   { path: '/shope', component: Shope },
-  { path: '/category-page', component: CategoryPage }
+  { path: '/category-page', component: CategoryPage },
+  { path: '/Order-failed', component: OrderFailed }
 ]
 const router = createRouter({
   history: createWebHistory(),
