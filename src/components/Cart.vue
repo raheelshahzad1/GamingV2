@@ -52,7 +52,7 @@ import {
               <div
                 class="col-span-4 flex justify-between flex-col md:flex-row gap-2 md:gap-4"
               >
-                <div>
+                <div class="flex justify-between">
                   <h3
                     class="text-sm sm:text-base font-semibold text-gray-800 line-clamp-3"
                   >
@@ -65,7 +65,7 @@ import {
                     <span>REMOVE</span>
                   </button>
                 </div>
-                <div>
+                <div class="flex justify-between">
                   <h4
                     class="text-lg max-sm:text-base font-bold text-gray-800 md:text-end mb-2"
                   >

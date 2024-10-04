@@ -1,5 +1,5 @@
 <template>
-  <RouterLink to="#">
+  <RouterLink to="/categoryPage">
     <div class="relative rounded-lg">
       <img
         src="https://www.instant-gaming.com/themes/igv2/modules/categoryMenu/images/category-background7.jpg"

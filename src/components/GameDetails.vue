@@ -74,7 +74,7 @@ function openModal() {
 </script>
 <template>
   <Navbar />
-  <div class="bg-stone-200">
+  <div>
     <div class="p-4 sm:p-9">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 md:mb-20 max-w-7xl mx-auto">
         <div>
@@ -265,7 +265,7 @@ function openModal() {
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6  mb-4 md:mb-7">
           <Review v-for="(item, index) in 6" :key="index"  />
         </div>
-        <div class="rounded-lg p-3 md:p-4 bg-stone-300 flex flex-col sm:flex-row justify-between">
+        <div class="rounded-lg p-3 md:p-4 bg-stone-50 border flex flex-col sm:flex-row justify-between">
          <div class="flex gap-1 md:gap-2 items-center justify-center sm:justify-start mb-3 sm:mb-0">
           <p class="text-gray-600 text-sm">Product Rating</p>
           <span class="font-bold text-sm text-gray-600">3.7 out of 5</span>

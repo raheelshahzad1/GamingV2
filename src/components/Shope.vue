@@ -137,28 +137,6 @@ const openFilters = () =>{
             </div>
         </div>
 
-        <div class="flex justify-center lg:justify-end py-7 md:py-10 px-4 space-x-1">
-            <button class="rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
-                Prev
-            </button>
-
-            <button class="min-w-9 rounded-md bg-[#535C91] py-2 px-3 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-[#535C91] focus:shadow-none active:bg-[#535C91] hover:bg-[#535C91] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
-                1
-            </button>
-
-            <button class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
-                2
-            </button>
-
-            <button class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
-                3
-            </button>
-
-            <button class="min-w-9 rounded-md border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-[#535C91] hover:border-[#535C91] focus:text-white focus:bg-[#535C91] focus:border-[#535C91] active:border-[#535C91] active:text-white active:bg-[#535C91] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2">
-                Next
-            </button>
-        </div>
-
         <transition name="slide">
             <div v-if="isOpen" class="fixed z-[200] w-[240px] inset-y-0 h-screen left-0 transition duration-300 ease-in-out overflow-y-scroll">
                 <div class="flex justify-between items-center p-3 md:p-4 bg-[#050c25]">
