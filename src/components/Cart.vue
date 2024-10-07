@@ -14,7 +14,7 @@ import {
 </script>
 <template>
   <Navbar />
-  <div class="bg-stone-200">
+  <div>
     <div class="max-w-7xl mx-auto sm:px-4 pt-12 pb-0 sm:pb-10">
       <h1 class="text-3xl font-bold text-gray-800 text-center mb-8 sm:mb-16">
         Shopping Cart
@@ -84,7 +84,7 @@ import {
         </div>
 
         <div
-          class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] sm:shadow-none border-t bg-gray-100 sm:rounded-md p-4 h-max sticky sm:relative bottom-0 inset-x-0 w-full">
+          class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] sm:shadow-none border-t bg-stone-50 border sm:rounded-md p-4 h-max sticky sm:relative bottom-0 inset-x-0 w-full">
           <h3 class="hidden sm:block text-lg max-sm:text-base font-bold text-gray-800 border-b border-gray-300 pb-2">
             Order Summary
           </h3>
@@ -103,10 +103,10 @@ import {
           </ul>
 
           <div class="mt-2 sm:mt-6 space-y-3">
-            <button type="button"
-              class="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-gray-800 hover:bg-gray-900 text-white rounded-md">
+            <router-link to="/order-failed"
+              class="block text-center text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-gray-800 hover:bg-gray-900 text-white rounded-md">
               Checkout
-            </button>
+            </router-link>
             <button type="button"
               class="hidden sm:inline text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-transparent text-gray-800 border border-gray-300 rounded-md">
               Continue Shopping

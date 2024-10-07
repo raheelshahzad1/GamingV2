@@ -19,7 +19,7 @@ import {XMarkIcon} from "@heroicons/vue/24/solid";
                 </button>
             </form>
             <div class="flex justify-between md:justify-start mt-2 mb-6">
-                <RouterLink to="/Order-failed">
+                <RouterLink to="/forgot-password">
                     <span class="text-sm hover:text-[#636eab] text-gray-200">Lost password?</span>
                 </RouterLink>
                 <RouterLink to="/signIn" class="inline md:hidden">

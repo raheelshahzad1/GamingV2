@@ -9,6 +9,7 @@ import GameDetails from '../components/GameDetails.vue'
 import Shope from '../components/Shope.vue'
 import CategoryPage from '../components/CategoryPage.vue'
 import OrderFailed from '../components/OrderFailed.vue'
+import OrderSuccessfull from '../components/OrderSuccessfull.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -20,7 +21,8 @@ const routes = [
   { path: '/game-details', component: GameDetails },
   { path: '/shope', component: Shope },
   { path: '/category-page', component: CategoryPage },
-  { path: '/Order-failed', component: OrderFailed }
+  { path: '/order-failed', component: OrderFailed },
+  { path: '/order-successfull', component: OrderSuccessfull }
 ]
 const router = createRouter({
   history: createWebHistory(),
