@@ -214,20 +214,20 @@ const listView = () => {
 
             <div v-else>
               <div v-for="(item, index) in 5" :key="index"
-                class="flex gap-4 py-4 border-b border-gray-300">
-
-                <RouterLink to="/game-details" class="rounded-lg">
-                  <img src="https://gaming-cdn.com/images/products/13615/380x218/ravenswatch-pc-game-steam-cover.jpg?v=1727777270" class="object-contain h-full w-48 rounded-lg"/>
+                class="flex gap-3 sm:gap-4 py-4 border-b border-gray-300">
+                <RouterLink to="/game-details" class="shrink-0 h-[115px] w-[115px] sm:w-[150px] rounded-lg">
+                <img src="https://gaming-cdn.com/images/products/13615/380x218/ravenswatch-pc-game-steam-cover.jpg?v=1727777270" 
+                class="w-full h-full object-cover rounded-lg" />
                 </RouterLink>
 
-                <div>
+                <div class="flex flex-col gap-2">
                   <h3
-                    class="text-sm md:text-base font-semibold text-gray-800 line-clamp-2 mb-2">
+                    class="font-semibold text-gray-800 line-clamp-2">
                     Velvet Sneaker Velvet Sneaker Velvet Sneaker Velvet Sneaker
                   </h3>
-                  <p class="font-medium text-gray-600 mb-2">36.49€</p>
+                  <p class="font-medium text-sm md:text-base text-gray-600">36.49€</p>
                   <button type="button"
-                    class="p-2 rounded-full border border-gray-500 bg-white text-black hover:bg-black hover:text-white">
+                    class="p-2 rounded-full w-fit border border-gray-500 bg-white text-black hover:bg-black hover:text-white">
                     <RouterLink to="/cart">
                       <ShoppingCartIcon class="size-4" />
                     </RouterLink>
