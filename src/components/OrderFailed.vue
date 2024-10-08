@@ -10,7 +10,7 @@ import { XCircleIcon } from "@heroicons/vue/24/solid";
       <div class="bg-red-600 py-4 sm:rounded-t-xl">
         <XCircleIcon class="text-white size-16 sm:size-20 mx-auto sm:mb-2" />
         <h1 class="text-xl md:text-2xl font-semibold text-white mb-1 text-center">
-        Oops! Order Failed
+          Oops! Order Failed
         </h1>
         <p class="text-white text-xs sm:text-sm text-center mb-4 sm:mb-14">
           For Order ID SD987902
@@ -43,8 +43,7 @@ import { XCircleIcon } from "@heroicons/vue/24/solid";
           <li>Invalid Account</li>
         </ul>
 
-        <div class="flex gap-2">
-          <button
+        <div class="flex gap-2"> <button
             class="hover:bg-gray-600 border border-gray-600 text-gray-600 hover:text-white w-full rounded-full p-1.5 transition-all text-sm sm:text-base">
             Close
           </button>

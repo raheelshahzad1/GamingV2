@@ -39,16 +39,16 @@ onUnmounted(() => {
   <!-- Top Menu -->
   <ul class="top-menu hidden bg-[#050c25] lg:flex justify-center items-center py-2">
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-          <RouterLink to="/shope" class="text-sm mr-2">Bestsellers</RouterLink>
+          <RouterLink to="/shop" class="text-sm mr-2">Bestsellers</RouterLink>
         </li>
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-          <RouterLink to="/shope" class="text-sm mr-2">New Games</RouterLink>
+          <RouterLink to="/shop" class="text-sm mr-2">New Games</RouterLink>
         </li>
         <li class="mx-2 hover:text-[#9290C3] text-gray-200">
           <RouterLink to="/support" class="text-sm">Support 24/7</RouterLink>
         </li>
   </ul>
-  <header class="shadow-md sticky top-0 z-20 text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center p-3 transition-colors duration-300">
+  <header class="shadow-md sticky top-0 z-20 text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center lg:p-3 py-4 px-2 transition-colors duration-300">
     <!-- Left Menu -->
     <div class="menu-left">
       <RouterLink to="/">
@@ -60,22 +60,22 @@ onUnmounted(() => {
       <ul class="bottom-menu overflow-hidden backdrop-blur flex items-center rounded-full relative">
         <li
           class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <RouterLink to="#" class="flex items-center">
+          <RouterLink to="/shop" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />PC
           </RouterLink>
         </li>
         <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <RouterLink to="#" class="flex items-center">
+          <RouterLink to="/shop" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />PlayStation
           </RouterLink>
         </li>
         <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <RouterLink to="#" class="flex items-center">
+          <RouterLink to="/shop" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />Xbox
           </RouterLink>
         </li>
         <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <RouterLink to="#" class="flex items-center">
+          <RouterLink to="/shop" class="flex items-center">
             <ComputerDesktopIcon class="size-5 mx-1" />Nintendo
           </RouterLink>
         </li>
@@ -150,22 +150,22 @@ onUnmounted(() => {
   <!-- Mobile Heder -->
   <ul class="lg:hidden inset-x-0 z-50 bg-[#535C91] backdrop-blur flex items-center justify-evenly py-2">
     <li class="hover:text-white text-gray-200">
-      <RouterLink to="#" class="flex items-center text-sm sm:text-md md:text-lg">
+      <RouterLink to="/shop" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />PC
       </RouterLink>
     </li>
     <li class="hover:text-white text-gray-200">
-      <RouterLink to="#" class="flex items-center text-sm sm:text-md md:text-lg">
+      <RouterLink to="/shop" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />PlayStation
       </RouterLink>
     </li>
     <li class="hover:text-white text-gray-200">
-      <RouterLink to="#" class="flex items-center text-sm sm:text-md md:text-lg">
+      <RouterLink to="/shop" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />Xbox
       </RouterLink>
     </li>
     <li class="hover:text-white text-gray-200">
-      <RouterLink to="#" class="flex items-center text-sm sm:text-md md:text-lg">
+      <RouterLink to="/shop" class="flex items-center text-sm sm:text-md md:text-lg">
         <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />Nintendo
       </RouterLink>
     </li>

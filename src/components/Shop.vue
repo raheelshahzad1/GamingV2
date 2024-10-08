@@ -244,6 +244,7 @@ const listView = () => {
               Show More
             </button>
           </div>
+
         </div>
       </div>
 
@@ -252,7 +253,7 @@ const listView = () => {
           v-if="isOpen"
           class="fixed z-[200] w-[240px] inset-y-0 h-screen left-0 transition duration-300 ease-in-out overflow-y-scroll">
           <div
-            class="flex justify-between items-center p-3 md:p-4 bg-[#050c25]">
+            class="flex justify-between items-center py-4 px-2 bg-[#050c25]">
             <RouterLink to="/">
               <img
                 src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg"

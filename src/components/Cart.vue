@@ -30,7 +30,7 @@ import {
                     </h1>
                     <p class="text-gray-600 text-center my-3 md:mb-5">You didn't add any item in your cart yet. Browse the website to find amazing deals!</p>
                     <div class="flex justify-center">
-                        <router-link to="/shope" class="bg-[#535C91] hover:bg-[#384176] text-white text-sm md:text-base rounded-full px-5 py-2 transition-all">
+                        <router-link to="/shop" class="bg-[#535C91] hover:bg-[#384176] text-white text-sm md:text-base rounded-full px-5 py-2 transition-all">
                             Discover games
                         </router-link>
                     </div>
@@ -83,8 +83,7 @@ import {
           </div>
         </div>
 
-        <div
-          class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] sm:shadow-none border-t bg-stone-50 border sm:rounded-md p-4 h-max sticky sm:relative bottom-0 inset-x-0 w-full">
+        <div class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] sm:shadow-none border-t bg-stone-50 border sm:rounded-md p-4 h-max sticky sm:relative bottom-0 inset-x-0 w-full">
           <h3 class="hidden sm:block text-lg max-sm:text-base font-bold text-gray-800 border-b border-gray-300 pb-2">
             Order Summary
           </h3>

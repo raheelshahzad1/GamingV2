@@ -6,7 +6,7 @@ import ForgotPassword from '../components/ForgotPassword.vue'
 import SignIn from '../components/SignIn.vue'
 import Support from '../components/Support.vue'
 import GameDetails from '../components/GameDetails.vue'
-import Shope from '../components/Shope.vue'
+import Shop from '../components/Shop.vue'
 import CategoryPage from '../components/CategoryPage.vue'
 import OrderFailed from '../components/OrderFailed.vue'
 import OrderSuccessfull from '../components/OrderSuccessfull.vue'
@@ -19,7 +19,7 @@ const routes = [
   { path: '/signIn', component: SignIn },
   { path: '/support', component: Support },
   { path: '/game-details', component: GameDetails },
-  { path: '/shope', component: Shope },
+  { path: '/shop', component: Shop },
   { path: '/category-page', component: CategoryPage },
   { path: '/order-failed', component: OrderFailed },
   { path: '/order-successfull', component: OrderSuccessfull }
