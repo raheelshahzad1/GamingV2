@@ -43,6 +43,7 @@ import { CheckCircleIcon } from "@heroicons/vue/24/solid";
             class="hover:bg-gray-600 border border-gray-600 text-gray-600 hover:text-white w-full rounded-full p-1.5 transition-all text-sm sm:text-base">
             Close
           </button>
+          
           <button
             class="hover:bg-green-600 border border-green-600 text-green-600 hover:text-white w-full rounded-full p-1.5 transition-all text-sm sm:text-base">
             Continue

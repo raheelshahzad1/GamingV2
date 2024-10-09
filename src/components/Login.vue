@@ -9,6 +9,7 @@ import {XMarkIcon} from "@heroicons/vue/24/solid";
                 <img src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg" alt="logo" class="h-8 md:h-9" />
             </RouterLink>
         </div>
+
         <div class="max-w-[600px] mx-auto px-4">
             <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-200 mb-4 md:mb-8 text-center">Login</h1>
             <form>
@@ -18,14 +19,17 @@ import {XMarkIcon} from "@heroicons/vue/24/solid";
                     Login
                 </button>
             </form>
+
             <div class="flex justify-between md:justify-start mt-2 mb-6">
                 <RouterLink to="/forgot-password">
                     <span class="text-sm hover:text-[#636eab] text-gray-200">Lost password?</span>
                 </RouterLink>
+
                 <RouterLink to="/signIn" class="inline md:hidden">
                     <span class="text-sm hover:text-[#636eab] text-gray-200">No account yet?</span>
                 </RouterLink>
             </div>
+
             <div class="py-6 border-t-[1px] border-[#322f6f]">
                 <div class="h-10 md:h-12 bg-white px-2 md:px-3 rounded-full flex gap-4 justify-center items-center cursor-pointer">
                     <img src="https://www.instant-gaming.com/themes/igv2/images/icons/socials/icon-gl.svg" class="h-6 md:h-8" />
@@ -38,11 +42,13 @@ import {XMarkIcon} from "@heroicons/vue/24/solid";
         <div class="px-4 lg:px-5">
           <h1 class="text-3xl lg:text-4xl font-semibold text-gray-900 mb-3 text-center">Come join us!</h1>
           <p class="text-gray-900 text-sm mb-4 text-center">Sign up now and unlock a world of new opportunities and personalized experiences tailored just for you!</p>
+          
           <RouterLink to="/signIn">
-          <button type="submit" class="bg-[#081134] hover:bg-[#152668] text-white rounded-full h-10 flex items-center justify-center md:py-4 transition-all w-full text-md md:text-lg">
-                    Sign up
-          </button>
+           <button type="submit" class="bg-[#081134] hover:bg-[#152668] text-white rounded-full h-10 flex items-center justify-center md:py-4 transition-all w-full text-md md:text-lg">
+            Sign up
+           </button>
           </RouterLink>
+
         </div>
     </div>
     <div class="p-1 bg-gray-100 md:bg-[#081134] rounded-full text-[#081134] md:text-gray-100 absolute top-2 md:top-4  md:right-4 right-2">

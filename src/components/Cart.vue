@@ -36,8 +36,8 @@ import {
                     </div>
                 </div> -->
 
-            <div v-for="(item, index) in 3" :key="index" class="flex gap-10 py-4 border-b border-gray-300">
-              <div class="shrink-0 h-32 w-32 sm:h-28 :w-28 bg-gray-50 p-3 rounded-md">
+            <div v-for="(item, index) in 3" :key="index" class="flex gap-4 md:gap-8 py-4 border-b border-gray-300">
+              <div class="shrink-0 h-32 w-32 sm:h-28 bg-gray-50 p-3 rounded-md">
                 <img src="https://readymadeui.com/images/product14.webp" class="w-full h-full object-contain" />
               </div>
 

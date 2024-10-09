@@ -13,6 +13,7 @@ import Game from "./Game.vue";
           alt=""
           class="w-full h-full object-cover rounded-lg"/>
         <div class="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
+
         <div class="max-w-7xl mx-auto absolute top-1/2 -translate-y-1/2 px-4 inset-x-0 z-10">
           <div>
             <h1
@@ -30,10 +31,13 @@ import Game from "./Game.vue";
             </div>
           </div>
         </div>
+        
       </div>
     </RouterLink>
+
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <Game v-for="(item, index) in 8" :key="index" />
     </div>
+
   </div>
 </template>
