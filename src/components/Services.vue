@@ -43,7 +43,6 @@ import {
               <p class="text-[#9290C3]">Human support 24/7</p>
             </div>
           </div>
-
       </div>
     </div>
   </div>

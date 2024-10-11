@@ -28,18 +28,15 @@ const isHovered = ref(false);
             </div>
 
             <div class="flex justify-center items-center bg-black text-white mb-3 rounded-br-lg rounded-bl-lg">
-                <h2 class="font-semibold text-red-500 py-3">2 remaining days</h2>
+                <h2 class="font-semibold text-red-500 p-3 text-center">2 remaining days</h2>
             </div>
-
         </div>
     </RouterLink>
-    
     <div class="grid grid-cols-3 gap-2">
         <h3 class="text-gray-800 font-bold line-clamp-2 col-span-2">
             Warstride Challenges
         </h3>
         <span class="font-bold text-gray-700 col-span-1 text-end">36.49€</span>
     </div>
-
 </div>
 </template>

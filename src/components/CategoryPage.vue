@@ -10,7 +10,7 @@ import Game from "./Game.vue";
       Action
     </h1>
 
-    <div class="flex items-center gap-3 flex-col sm:flex-row justify-end mb-10">
+    <div class="flex items-center gap-3 flex-col sm:flex-row justify-center sm:justify-end mb-10">
       <span class="text-gray-600 font-medium text-sm">Adjust Price</span>
       <div class="flex gap-3">
         <input type="number" min="0" value="0"
@@ -20,7 +20,7 @@ import Game from "./Game.vue";
           class="w-20 sm:w-24 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-300 rounded p-3 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer" />
       </div>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4 md:mb-7">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-4 md:mb-7">
       <Game v-for="(item, index) in 16" :key="index" />
     </div>
 

@@ -6,11 +6,10 @@ const isHovered = ref(false);
 <template>
     <div class="game relative">
       <RouterLink to="/game-details">
-        <div class="group overflow-hidden rounded-lg"
+        <div class="group overflow-hidden rounded-lg mb-2"
           @mouseenter="isHovered = true"
           @mouseleave="isHovered = false">
-          <div class="mb-3 relative">
-
+          <div class="relative">
             <div class="gap-2 opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-50 rounded-lg flex justify-center items-center transition-opacity duration-500 delay-75">
               <button type="button" class="p-2 rounded-full bg-white text-black hover:bg-black hover:text-white">
                   <RouterLink to="/game-details">
@@ -42,7 +41,7 @@ const isHovered = ref(false);
       </RouterLink>
 
       <div>
-        <p class="text-gray-900 text-sm mb-2 line-clamp-2">
+        <p class="text-gray-900 text-sm mb-1 line-clamp-2">
           Age of Mythology: Retold Premium Edition Age of Mythology: Retold
           Premium EditionAge of Mythology: Retold Premium Edition Age of
           Mythology: Retold Premium EditionAge of Mythology: Retold Premium
@@ -51,8 +50,7 @@ const isHovered = ref(false);
           Mythology: Retold Premium EditionAge of Mythology: Retold Premium
           Edition
         </p>
-        <span class="font-bold text-gray-600">36.49€</span>
+        <span class="font-bold text-sm text-gray-600">36.49€</span>
       </div>
-      
     </div>
 </template>

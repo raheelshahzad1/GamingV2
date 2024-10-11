@@ -108,7 +108,7 @@ function openModal() {
           <div class="flex p-2 md:p-3 rounded-full backdrop-blur-md bg-black/30 text-center w-fit mx-auto">
             <div class="border-r border-[#322f6f] px-2">
               <RouterLink
-                to="#"
+                to="/category-page"
                 class="flex items-center gap-1 hover:text-[#535C91] text-gray-900">
                 <div>
                   <FaceSmileIcon class="size-4 md:size-5 font-bold" />
@@ -250,7 +250,7 @@ function openModal() {
 
               <li class="text-gray-900">9 September 2024</li>
 
-              <li class="">
+              <li>
                 <RouterLink to="#"
                   class="text-gray-900 hover:text-[#535C91] cursor-pointer">
                   Action,
@@ -275,7 +275,7 @@ function openModal() {
         <h1 class="text-xl font-semibold text-gray-600 mb-4">
           Similar products
         </h1>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           <Game v-for="(item, index) in 8" :key="index" />
         </div>
       </div>
@@ -285,7 +285,7 @@ function openModal() {
           <span>29</span> Reviews
         </h1>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6  mb-4 md:mb-7">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-4 md:mb-7">
           <Review v-for="(item, index) in 6" :key="index"  />
         </div>
 

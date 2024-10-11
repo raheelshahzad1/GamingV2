@@ -4,17 +4,18 @@ import { XMarkIcon, ChevronDoubleLeftIcon } from "@heroicons/vue/24/solid";
 <template>
   <div class="grid grid-cols-2 md:grid-cols-3 relative h-screen">
     <div class="bg-[#081134] col-span-2">
-      <div class="pt-2 md:pt-5 pl-2 md:pl-5 mb-8 md:mb-14">
 
+      <div class="pt-3 pl-3 mb-8 md:mb-14">
         <RouterLink to="/">
           <img src="https://www.instant-gaming.com/themes/igv2/images/logos/logo-horizontal.svg" alt="logo"
             class="h-8 md:h-9" />
         </RouterLink>
-
       </div>
+
       <div class="max-w-[600px] mx-auto px-4">
         <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-200 mb-4 md:mb-8 text-center">
-          Lost your password?</h1>
+          Lost your password?
+        </h1>
 
         <p class="text-gray-200 text-sm mb-3 md:mb-4">
           Please enter the address which you used to register. We will send you an
@@ -47,7 +48,9 @@ import { XMarkIcon, ChevronDoubleLeftIcon } from "@heroicons/vue/24/solid";
       <div class="px-4 lg:px-5">
         <h1 class="text-3xl lg:text-4xl font-semibold text-gray-900 mb-3 text-center">Back to Login</h1>
         <p class="text-gray-900 text-sm mb-4 text-center">Remembered your password? No worries! Click here to go back to
-          the login page.</p>
+          the login page.
+        </p>
+        
         <RouterLink to="/login">
           <button type="submit"
             class="bg-[#081134] hover:bg-[#152668] text-white rounded-full h-10 flex items-center justify-center md:py-4 transition-all w-full text-md md:text-lg">
@@ -55,10 +58,9 @@ import { XMarkIcon, ChevronDoubleLeftIcon } from "@heroicons/vue/24/solid";
           </button>
         </RouterLink>
       </div>
-      
     </div>
 
-    <div class="p-1 bg-gray-100 md:bg-[#081134] rounded-full text-[#081134] md:text-gray-100 absolute top-2 md:top-4 md:right-4 right-2">
+    <div class="p-1 bg-gray-100 md:bg-[#081134] rounded-full text-[#081134] md:text-gray-100 absolute top-3 right-3">
       <RouterLink to="/">
         <XMarkIcon class="size-4 md:size-5" />
       </RouterLink>

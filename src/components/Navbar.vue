@@ -23,20 +23,19 @@ const hideMobileSearch = () => {
 };
 </script>
 <template>
-  <ul class="top-menu hidden bg-[#050c25] lg:flex justify-center items-center py-2">
+  <ul class="top-menu hidden bg-[#050c25] lg:flex justify-center items-center gap-2 py-2">
     <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-      <RouterLink to="/shop" class="text-sm mr-2">Bestsellers</RouterLink>
+      <RouterLink to="/shop" class="text-sm">Bestsellers</RouterLink>
     </li>
 
     <li class="mx-2 hover:text-[#9290C3] text-gray-200">
-      <RouterLink to="/shop" class="text-sm mr-2">New Games</RouterLink>
+      <RouterLink to="/shop" class="text-sm">New Games</RouterLink>
     </li>
 
     <li class="mx-2 hover:text-[#9290C3] text-gray-200">
       <RouterLink to="/support" class="text-sm">Support 24/7</RouterLink>
     </li>
   </ul>
-
   <header
     class="shadow-md sticky top-0 z-20 text-white flex justify-between bg-[#050c25] lg:bg-[#535C91] items-center lg:p-3 py-4 px-2 transition-colors duration-300">
     <div class="menu-left">
@@ -47,34 +46,34 @@ const hideMobileSearch = () => {
     </div>
 
     <div class="hidden lg:inline">
-      <ul class="bottom-menu overflow-hidden backdrop-blur flex items-center rounded-full relative">
-        <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <RouterLink to="/shop" class="flex items-center">
-            <ComputerDesktopIcon class="size-5 mx-1" />PC
+      <ul class="bottom-menu overflow-hidden backdrop-blur flex gap-3 items-center rounded-full relative">
+        <li class="hover:bg-[#9290C3] bg-transparent rounded-full p-3 text-gray-100">
+          <RouterLink to="/shop" class="flex gap-1 items-center">
+            <ComputerDesktopIcon class="size-5" />PC
           </RouterLink>
         </li>
 
-        <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <RouterLink to="/shop" class="flex items-center">
-            <ComputerDesktopIcon class="size-5 mx-1" />PlayStation
+        <li class="hover:bg-[#9290C3] bg-transparent rounded-full p-3 text-gray-100">
+          <RouterLink to="/shop" class="flex gap-1 items-center">
+            <ComputerDesktopIcon class="size-5" />PlayStation
           </RouterLink>
         </li>
 
-        <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <RouterLink to="/shop" class="flex items-center">
-            <ComputerDesktopIcon class="size-5 mx-1" />Xbox
+        <li class="hover:bg-[#9290C3] bg-transparent rounded-full p-3 text-gray-100">
+          <RouterLink to="/shop" class="flex gap-1 items-center">
+            <ComputerDesktopIcon class="size-5" />Xbox
           </RouterLink>
         </li>
 
-        <li class="hover:bg-[#9290C3] bg-transparent rounded-full mx-2 p-3 text-gray-100">
-          <RouterLink to="/shop" class="flex items-center">
-            <ComputerDesktopIcon class="size-5 mx-1" />Nintendo
+        <li class="hover:bg-[#9290C3] bg-transparent rounded-full p-3 text-gray-100">
+          <RouterLink to="/shop" class="flex gap-1 items-center">
+            <ComputerDesktopIcon class="size-5" />Nintendo
           </RouterLink>
         </li>
 
         <li>
           <button
-            class="flex items-center search mx-2 p-3 bg-[#070F2B] rounded-full hover:text-white text-gray-300 cursor-pointer"
+            class="flex items-center search p-3 bg-[#070F2B] rounded-full hover:text-white text-gray-300 cursor-pointer"
             @click="toggleSearch">
             <MagnifyingGlassIcon class="size-5" />
           </button>
@@ -131,28 +130,40 @@ const hideMobileSearch = () => {
     </div>
   </header>
 
-  <ul class="lg:hidden inset-x-0 z-50 bg-[#535C91] backdrop-blur flex items-center justify-evenly py-2">
+  <ul class="lg:hidden bg-[#535C91] flex items-center justify-evenly py-2">
     <li class="hover:text-white text-gray-200">
-      <RouterLink to="/shop" class="flex items-center text-sm sm:text-md md:text-lg">
-        <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />PC
+      <RouterLink to="/shop" class="flex items-center gap-1 text-sm sm:text-md md:text-lg">
+        <ComputerDesktopIcon class="size-4 sm:size-5" />
+        <span>
+          PC
+        </span>
       </RouterLink>
     </li>
 
     <li class="hover:text-white text-gray-200">
-      <RouterLink to="/shop" class="flex items-center text-sm sm:text-md md:text-lg">
-        <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />PlayStation
+      <RouterLink to="/shop" class="flex items-center gap-1 text-sm sm:text-md md:text-lg">
+        <ComputerDesktopIcon class="size-4 sm:size-5" />
+        <span>
+          PlayStation
+        </span>
       </RouterLink>
     </li>
 
     <li class="hover:text-white text-gray-200">
-      <RouterLink to="/shop" class="flex items-center text-sm sm:text-md md:text-lg">
-        <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />Xbox
+      <RouterLink to="/shop" class="flex items-center gap-1 text-sm sm:text-md md:text-lg">
+        <ComputerDesktopIcon class="size-4 sm:size-5" />
+        <span>
+          Xbox
+        </span>
       </RouterLink>
     </li>
 
     <li class="hover:text-white text-gray-200">
-      <RouterLink to="/shop" class="flex items-center text-sm sm:text-md md:text-lg">
-        <ComputerDesktopIcon class="size-4 sm:size-5 mr-1" />Nintendo
+      <RouterLink to="/shop" class="flex items-center gap-1 text-sm sm:text-md md:text-lg">
+        <ComputerDesktopIcon class="size-4 sm:size-5" />
+        <span>
+          Nintendo
+        </span>
       </RouterLink>
     </li>
   </ul>

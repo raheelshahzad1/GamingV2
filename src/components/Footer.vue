@@ -1,15 +1,15 @@
 <template>
   <div>
     <footer class="bg-[#050c25] pt-12 px-4 md:px-10 font-sans tracking-wide">
-
       <div class="lg:max-w-[50%] mx-auto text-center">
-        <h3 class="text-3xl font-bold text-gray-200">Newsletter</h3>
-        <p class="text-sm mt-6 text-gray-400">
+        <h3 class="text-3xl font-bold text-gray-200 mb-6">Newsletter</h3>
+        <p class="text-sm text-gray-400 mb-10">
           Subscribe to our newsletter and stay up to date with the latest news,
           updates, and exclusive offers. Get valuable insights. Join our
           community today!
         </p>
-        <div class="bg-[#dddddd] flex px-2 py-1.5 rounded-full text-left mt-10">
+        
+        <div class="bg-[#dddddd] flex px-2 py-1.5 rounded-full text-left">
           <input type="email"
             placeholder="Enter your email"
             class="w-full outline-none bg-transparent text-sm pl-4"/>

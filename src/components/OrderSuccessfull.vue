@@ -18,22 +18,22 @@ import { CheckCircleIcon } from "@heroicons/vue/24/solid";
       </div>
 
       <div class="px-3 text-sm sm:text-base py-6">
-        <ul class="mb-3 flex justify-between gap-6 text-gray-700">
+        <ul class="mb-3 flex justify-between gap-4 text-gray-700">
           <li class="font-medium">Status :</li>
           <li>Completed</li>
         </ul>
 
-        <ul class="mb-3 flex justify-between gap-6 text-gray-700">
+        <ul class="mb-3 flex justify-between gap-4 text-gray-700">
           <li class="font-medium">E-mail :</li>
           <li>gaming@gmail.com</li>
         </ul>
 
-        <ul class="mb-3 flex justify-between gap-6 text-gray-700">
+        <ul class="mb-3 flex justify-between gap-4 text-gray-700">
           <li class="font-medium">Date :</li>
           <li>23/04/2024</li>
         </ul>
 
-        <ul class="mb-5 flex justify-between gap-6 text-gray-700">
+        <ul class="mb-5 flex justify-between gap-4 text-gray-700">
           <li class="font-medium">Total Cost :</li>
           <li>233€</li>
         </ul>

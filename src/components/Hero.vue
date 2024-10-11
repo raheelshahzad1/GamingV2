@@ -9,8 +9,8 @@
         <h1 class="text-white font-bold line-clamp-2 text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-4 w-4/5 md:w-2/5">
           Warhammer 40,000: Space Marine 2
         </h1>
-        <div class="discount flex">
-          <span class="mr-2 px-1 md:px-2 py-1 rounded-lg bg-red-700 text-white text-sm md:text-lg">
+        <div class="discount gap-1 sm:gap-2 items-center flex">
+          <span class="px-1 md:px-2 py-1 rounded-lg bg-red-700 text-white text-sm md:text-lg">
             -24%
           </span>
           <span class="text-white text-md sm:text-lg md:text-2xl">45.89€</span>

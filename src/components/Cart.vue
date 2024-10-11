@@ -1,49 +1,49 @@
 <script setup>
+import { ref } from "vue";
 import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
 import {
   ShoppingCartIcon,
-  ChevronRightIcon,
-  ChevronLeftIcon,
-  FaceSmileIcon,
   TrashIcon,
-  ArrowLongUpIcon,
   PlusIcon,
   MinusIcon,
 } from "@heroicons/vue/24/solid";
+const emptyCart = ref(false)
 </script>
 <template>
   <Navbar />
   <div>
     <div class="max-w-7xl mx-auto sm:px-4 pt-12 pb-0 sm:pb-10">
-      <h1 class="text-3xl font-bold text-gray-800 text-center mb-8 sm:mb-16">
+      <h1 class="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-8 sm:mb-16 px-2">
         Shopping Cart
       </h1>
 
       <div class="grid md:grid-cols-3 gap-14">
         <div class="md:col-span-2 space-y-4">
           <div class="px-4 sm:px-0">
-            <!-- <div class="p-5 sm:p-8 bg-gray-100 rounded-xl">
-                    <ShoppingCartIcon class="size-12 md:size-16 text-[#0c1b51] mx-auto" />
-                    <h1 class="text-xl md:text-2xl font-semibold text-gray-600 my-3 md:my-5 text-center">
+
+            <div v-if="emptyCart" class="p-5 sm:p-8 bg-stone-50 border rounded-md shadow">
+                    <ShoppingCartIcon class="size-12 md:size-16 text-[#0c1b51] mx-auto mb-3 md:mb-5" />
+                    <h1 class="text-xl md:text-2xl font-semibold text-gray-600 mb-3 md:mb-5 text-center">
                         Your cart is empty
                     </h1>
-                    <p class="text-gray-600 text-center my-3 md:mb-5">You didn't add any item in your cart yet. Browse the website to find amazing deals!</p>
+                    <p class="text-gray-600 text-center mb-3 md:mb-5">You didn't add any item in your cart yet. Browse the website to find amazing deals!</p>
                     <div class="flex justify-center">
                         <router-link to="/shop" class="bg-[#535C91] hover:bg-[#384176] text-white text-sm md:text-base rounded-full px-5 py-2 transition-all">
                             Discover games
                         </router-link>
                     </div>
-                </div> -->
+                </div>
 
-            <div v-for="(item, index) in 3" :key="index" class="flex gap-4 md:gap-8 py-4 border-b border-gray-300">
+            <div v-else 
+             v-for="(item, index) in 3" :key="index" class="flex gap-4 md:gap-8 py-4 border-b border-gray-300">
               <div class="shrink-0 h-32 w-32 sm:h-28 bg-gray-50 p-3 rounded-md">
                 <img src="https://readymadeui.com/images/product14.webp" class="w-full h-full object-contain" />
               </div>
 
               <div class="w-full flex flex-col sm:flex-row gap-3 sm:gap-10">
                 <div class="sm:grow">
-                  <h3 class="text-sm sm:text-base font-semibold text-gray-800 line-clamp-3">
+                  <h3 class="text-sm sm:text-base font-semibold text-gray-800 line-clamp-2">
                     Velvet Sneaker Velvet Sneaker Velvet Sneaker Velvet Sneaker
                   </h3>
 
@@ -61,15 +61,15 @@ import {
 
                   <div class="flex items-center gap-2">
                     <div class="flex rounded-md border border-gray-400">
-                      <button class="h-8 w-8 flex items-center justify-center">
+                      <button class="size-7 flex items-center justify-center">
                         <PlusIcon class="size-3" />
                       </button>
 
-                      <span class="h-8 w-8 flex items-center justify-center border-l border-r border-gray-400">
+                      <span class="size-7 flex items-center justify-center border-l border-r border-gray-400">
                         1
                       </span>
 
-                      <button class="h-8 w-8 flex items-center justify-center">
+                      <button class="size-7 flex items-center justify-center">
                         <MinusIcon class="size-3" />
                       </button>
                     </div>
@@ -83,7 +83,7 @@ import {
           </div>
         </div>
 
-        <div class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] sm:shadow-none border-t bg-stone-50 border sm:rounded-md p-4 h-max sticky sm:relative bottom-0 inset-x-0 w-full">
+        <div class="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] sm:shadow border-t bg-stone-50 border sm:rounded-md p-4 h-max sticky sm:relative bottom-0 inset-x-0 w-full">
           <h3 class="hidden sm:block text-lg max-sm:text-base font-bold text-gray-800 border-b border-gray-300 pb-2">
             Order Summary
           </h3>
